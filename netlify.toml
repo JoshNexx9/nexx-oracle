@@ -1,0 +1,26 @@
+# NEXX Oracle — static deploy (Netlify free tier)
+[build]
+  publish = "."
+  command = "echo 'Static site — no build step'"
+
+[[redirects]]
+  from = "/center"
+  to = "/"
+  status = 301
+
+[[redirects]]
+  from = "/center.html"
+  to = "/"
+  status = 301
+
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Frame-Options = "DENY"
+    X-Content-Type-Options = "nosniff"
+    Referrer-Policy = "strict-origin-when-cross-origin"
+
+[[headers]]
+  for = "/assets/*"
+  [headers.values]
+    Cache-Control = "public, max-age=604800"
