@@ -1,1 +1,12 @@
-[{"id":"00","name":"The Fool","suit":"major","arcana":"major","keyword":"New signal. Leap before the loop restarts.","meaning":"New signal. Leap before the loop restarts.","nexx_move":"Boot a fresh session. One brave click. No backup plan needed.","art":"assets/major/00-the-fool.png"}]
+[
+  {
+    "id": "00",
+    "name": "The Fool",
+    "suit": "major",
+    "arcana": "major",
+    "keyword": "New signal. Leap before the loop restarts.",
+    "meaning": "New signal. Leap before the loop restarts.",
+    "nexx_move": "Boot a fresh session. One brave click. No backup plan needed.",
+    "art": "assets/major/00-the-fool.png"
+  }
+]
