@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Sign in to NEXX Oracle" />
+  <meta name="theme-color" content="#0e0e0e" />
+  <meta name="robots" content="noindex" />
+  <title>Sign in · NEXX Oracle</title>
+  <link rel="stylesheet" href="css/login.css" />
+  <link rel="icon" href="assets/logo.jpg" />
+</head>
+<body class="oauth-page">
+  <main class="oauth-card" role="main">
+    <header class="oauth-header">
+      <svg viewBox="0 0 48 48" aria-hidden="true">
+        <path fill="#EA4335" d="M24 9.5c3.54 0 6.71 1.22 9.21 3.6l6.85-6.85C35.9 2.38 30.47 0 24 0 14.62 0 6.51 5.38 2.56 13.22l7.98 6.19C12.43 13.72 17.74 9.5 24 9.5z"/>
+        <path fill="#4285F4" d="M46.98 24.55c0-1.57-.15-3.09-.38-4.55H24v9.02h12.94c-.56 2.96-2.26 5.48-4.78 7.18l7.73 6c4.51-4.18 7.09-10.36 7.09-17.65z"/>
+        <path fill="#FBBC05" d="M10.53 28.59c-.48-1.45-.76-2.99-.76-4.59s.27-3.14.76-4.59l-7.98-6.19C.92 16.46 0 20.12 0 24c0 3.88.92 7.54 2.56 10.78l7.97-6.19z"/>
+        <path fill="#34A853" d="M24 48c6.48 0 11.93-2.13 15.89-5.81l-7.73-6c-2.15 1.45-4.92 2.3-8.16 2.3-6.26 0-11.57-4.22-13.47-9.91l-7.98 6.19C6.51 42.62 14.62 48 24 48z"/>
+      </svg>
+      <span>Sign in with Google</span>
+    </header>
+
+    <div class="oauth-body">
+      <div class="oauth-left">
+        <h1>Welcome</h1>
+        <div class="account-chip">
+          <span class="avatar" aria-hidden="true">J</span>
+          <span id="display-email">jnexsociety@gmail.com</span>
+        </div>
+      </div>
+
+      <div class="oauth-right">
+        <!-- Password step (default) -->
+        <form id="password-form" class="oauth-step" data-step="password" autocomplete="on">
+          <div class="oauth-field">
+            <input
+              type="password"
+              id="password"
+              name="password"
+              placeholder=" "
+              autocomplete="current-password"
+              required
+            />
+            <label for="password">Enter your password</label>
+          </div>
+          <p class="oauth-error" id="login-error" role="alert"></p>
+          <button type="button" class="passkey-btn" id="btn-passkey">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+              <path d="M12 2a5 5 0 0 0-5 5v2H6a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V11a2 2 0 0 0-2-2h-1V7a5 5 0 0 0-5-5zm-3 7V7a3 3 0 1 1 6 0v2H9z"/>
+            </svg>
+            Use a passkey
+          </button>
+          <p class="manage-pw">Manage Passwords</p>
+        </form>
+
+        <!-- Alternate: email re-entry -->
+        <form id="email-form" class="oauth-step alt-panel" data-step="email" hidden>
+          <div class="oauth-field has-value">
+            <input type="email" id="email" name="email" value="jnexsociety@gmail.com" autocomplete="username" required />
+            <label for="email">Email</label>
+          </div>
+          <p class="oauth-error" id="email-error" role="alert"></p>
+        </form>
+      </div>
+    </div>
+
+    <p class="oauth-legal">
+      Before using this app, you can review NEXX Oracle's
+      <a href="archive.html">Privacy Policy</a> and
+      <a href="premium.html">Terms of Service</a>.
+    </p>
+
+    <footer class="oauth-actions">
+      <button type="button" class="btn-text" id="btn-try-another">Try another way</button>
+      <button type="submit" class="btn-next" id="btn-next" form="password-form">Next</button>
+    </footer>
+  </main>
+
+  <footer class="oauth-page-footer">
+    <select aria-label="Language">
+      <option>English (United States)</option>
+    </select>
+    <nav>
+      <a href="grow.html">Help</a>
+      <a href="archive.html">Privacy</a>
+      <a href="premium.html">Terms</a>
+    </nav>
+  </footer>
+
+  <!-- TPM PIN pad (passkey fallback on HTTP / LAN) -->
+  <div class="pin-overlay" id="pin-overlay" hidden>
+    <div class="pin-dialog" role="dialog" aria-labelledby="pin-title" aria-modal="true">
+      <h2 id="pin-title">Use your passkey</h2>
+      <p>Enter your TPM PIN to unlock NEXX Oracle</p>
+      <div class="pin-dots" id="pin-dots" aria-hidden="true">
+        <span></span><span></span><span></span><span></span>
+      </div>
+      <div class="pin-pad" id="pin-pad">
+        <button type="button" data-digit="1">1</button>
+        <button type="button" data-digit="2">2</button>
+        <button type="button" data-digit="3">3</button>
+        <button type="button" data-digit="4">4</button>
+        <button type="button" data-digit="5">5</button>
+        <button type="button" data-digit="6">6</button>
+        <button type="button" data-digit="7">7</button>
+        <button type="button" data-digit="8">8</button>
+        <button type="button" data-digit="9">9</button>
+        <button type="button" class="pin-action" data-action="clear">Clear</button>
+        <button type="button" data-digit="0">0</button>
+        <button type="button" class="pin-action" data-action="back">⌫</button>
+      </div>
+      <p class="pin-error" id="pin-error" role="alert"></p>
+      <button type="button" class="pin-close" id="pin-close">Cancel</button>
+    </div>
+  </div>
+
+  <script src="js/nexx-auth.js"></script>
+  <script src="js/login.js"></script>
+</body>
+</html>
