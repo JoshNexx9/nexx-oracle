@@ -6,25 +6,58 @@ on:
   workflow_dispatch:
 
 permissions:
-  contents: write
+  contents: read
   pages: write
+  id-token: write
 
 concurrency:
   group: pages
   cancel-in-progress: false
 
 jobs:
-  deploy:
+  build:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
 
-      - name: Deploy static site to gh-pages branch
-        uses: peaceiris/actions-gh-pages@v4
+      - name: Reassemble site assets
+        run: |
+          if [ -f data/asset-parts/part-00.b64 ]; then
+            python3 scripts/reassemble-assets.py
+          fi
+          if ls data/css-chunks/chunk-*.b64 1>/dev/null 2>&1; then
+            python3 scripts/reassemble-css.py
+          fi
+
+      - uses: actions/configure-pages@v5
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: .
-          publish_branch: gh-pages
-          force_orphan: true
-          enable_jekyll: false
-          exclude_assets: .github,scripts,vault/server.py,vault/store.py,.netlify,data/asset-parts,data/css-chunks
+          enablement: true
+
+      - name: Prepare publish directory
+        run: |
+          rm -rf _site
+          rsync -a \
+            --exclude '.git' \
+            --exclude '.github' \
+            --exclude 'scripts' \
+            --exclude 'vault/server.py' \
+            --exclude 'vault/store.py' \
+            --exclude '.netlify' \
+            --exclude 'data/asset-parts' \
+            --exclude 'data/css-chunks' \
+            --exclude '_site' \
+            . _site/
+
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: _site
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - uses: actions/deploy-pages@v4
+        id: deployment

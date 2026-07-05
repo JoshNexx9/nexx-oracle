@@ -16,7 +16,12 @@ jobs:
       - uses: actions/checkout@v4
 
       - name: Reassemble assets from tarball parts
-        run: python3 scripts/reassemble-assets.py
+        run: |
+          if [ ! -f data/asset-parts/part-00.b64 ]; then
+            echo "Asset parts not uploaded yet — skipping"
+            exit 0
+          fi
+          python3 scripts/reassemble-assets.py
 
       - name: Commit restored assets
         run: |
