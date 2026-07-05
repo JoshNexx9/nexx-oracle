@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>NEXX Myth Archive · Origins & Legends</title>
+  <link rel="stylesheet" href="css/nexx-tarot.css" />
+  <link rel="icon" href="assets/logo.jpg" />
+</head>
+<body class="scanlines archive-mode">
+  <div class="app">
+    <header>
+      <img class="logo" src="assets/logo.jpg" alt="Archive" />
+      <div class="brand">
+        <h1 class="glitch">Myth Archive</h1>
+        <p>Gods · demons · tarot origins</p>
+      </div>
+      <nav class="nav-links">
+        <a href="index.html" class="center-nav">Home</a>
+        <a href="archive.html" class="active">Archive</a>
+        <a href="science.html">Code</a>
+        <a href="tarot.html">Tarot</a>
+      </nav>
+    </header>
+
+    <section class="panel">
+      <div class="field field-grow">
+        <label for="archive-search">Search mythology</label>
+        <input type="search" id="archive-search" placeholder="Tower, Isis, demon, fire…" />
+      </div>
+    </section>
+
+    <section class="archive-section">
+      <h2 class="section-title">Suit origins</h2>
+      <div id="suit-archive" class="archive-suits"></div>
+    </section>
+
+    <section class="archive-section">
+      <h2 class="section-title">Major Arcana · legends</h2>
+      <div id="major-archive" class="archive-majors"></div>
+    </section>
+
+    <footer><a href="index.html">← Home</a></footer>
+  </div>
+  <script src="js/nexx-auth.js"></script>
+  <script src="js/auth-gate.js"></script>
+  <script src="js/archive.js"></script>
+</body>
+</html>
