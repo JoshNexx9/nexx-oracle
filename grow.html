@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="NEXX Growth Lab — double your TikTok subs @JoshNexx9" />
+  <meta name="theme-color" content="#05050f" />
+  <title>NEXX Growth Lab · @JoshNexx9</title>
+  <link rel="stylesheet" href="css/nexx-tarot.css" />
+  <link rel="icon" href="assets/logo.jpg" />
+</head>
+<body class="scanlines grow-mode">
+  <div class="app">
+    <header>
+      <img class="logo" src="assets/logo.jpg" alt="NEXX Growth" />
+      <div class="brand">
+        <h1 class="glitch">Growth Lab</h1>
+        <p>Double your subs · @JoshNexx9</p>
+      </div>
+      <nav class="nav-links">
+        <a href="index.html" class="center-nav">Home</a>
+        <a href="studio.html">Studio</a>
+        <a href="grow.html" class="active grow-nav">Grow</a>
+        <a href="tarot.html">Tarot</a>
+        <a href="premium.html" class="premium-nav">Premium</a>
+      </nav>
+      <div class="status-bar">
+        <span>Target</span>
+        <strong>2× subs</strong>
+      </div>
+    </header>
+
+    <section class="panel grow-hero">
+      <p class="grow-tagline">Cyberpunk tarot niche playbook — bio, hooks, 7-day calendar, daily move. Built for <a href="https://www.tiktok.com/@JoshNexx9" target="_blank" rel="noopener">@JoshNexx9</a>.</p>
+      <div class="grow-hero-actions">
+        <button type="button" class="primary" id="btn-open-studio">Open Studio</button>
+        <a class="tiktok-badge" href="https://www.tiktok.com/@JoshNexx9" target="_blank" rel="noopener">▶ TikTok Profile</a>
+      </div>
+    </section>
+
+    <section class="panel grow-subs">
+      <h2 class="section-title">Subscriber goal · 2×</h2>
+      <div class="grow-subs-grid">
+        <div class="field">
+          <label for="sub-current">Current followers</label>
+          <input type="number" id="sub-current" min="0" placeholder="e.g. 500" inputmode="numeric" />
+        </div>
+        <div class="grow-subs-stat">
+          <span>Goal</span>
+          <strong id="sub-goal">0</strong>
+        </div>
+        <div class="grow-subs-stat">
+          <span>To go</span>
+          <strong id="sub-remaining">0</strong>
+        </div>
+      </div>
+      <div class="grow-progress"><span id="sub-progress-bar"></span></div>
+      <p class="grow-subs-hint">Post daily POV pulls + pin CONSULT. Tarot creators average 15–25% follow rate from profile visits when hooks hit in 3s.</p>
+    </section>
+
+    <section class="panel grow-today">
+      <div class="grow-today-head">
+        <h2 class="section-title">Today's growth move</h2>
+        <button type="button" id="btn-copy-today">Copy plan</button>
+      </div>
+      <div class="grow-today-body">
+        <img id="today-move-art" src="assets/card-back.jpg" alt="Today's card" />
+        <div>
+          <p class="grow-today-theme" id="today-move-theme">—</p>
+          <h3 id="today-move-card">—</h3>
+          <p id="today-move-keyword" class="grow-today-kw">—</p>
+          <p class="grow-today-hook" id="today-move-hook">—</p>
+          <p class="grow-today-action"><strong>Do this:</strong> <span id="today-move-action">—</span></p>
+        </div>
+      </div>
+    </section>
+
+    <section class="grow-section">
+      <h2 class="section-title">Content pillars</h2>
+      <div id="pillar-bars" class="grow-pillars"></div>
+    </section>
+
+    <section class="grow-section">
+      <h2 class="section-title">7-day posting calendar</h2>
+      <div id="calendar-grid" class="grow-calendar"></div>
+    </section>
+
+    <section class="grow-section">
+      <h2 class="section-title">Bio templates</h2>
+      <div id="bio-templates" class="grow-bios"></div>
+    </section>
+
+    <section class="grow-section">
+      <h2 class="section-title">Hook bank</h2>
+      <div id="hook-bank" class="grow-hooks"></div>
+    </section>
+
+    <footer>
+      NEXX Growth Lab © nexx · <a href="https://www.tiktok.com/@JoshNexx9" target="_blank" rel="noopener">@JoshNexx9</a> · double the signal
+    </footer>
+  </div>
+  <script src="js/nexx-auth.js"></script>
+  <script src="js/auth-gate.js"></script>
+  <script src="js/copy.js"></script>
+  <script src="js/grow.js"></script>
+</body>
+</html>
