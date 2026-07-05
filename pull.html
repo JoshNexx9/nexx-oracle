@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="NEXX Cipher — pull from 52 cyberpunk playing cards." />
+  <meta name="theme-color" content="#05050f" />
+  <title>NEXX Cipher · Card Pull</title>
+  <link rel="stylesheet" href="css/nexx-tarot.css" />
+  <link rel="icon" href="assets/logo.jpg" />
+</head>
+<body class="scanlines pull-mode">
+  <div class="app">
+    <header>
+      <img class="logo" src="assets/logo.jpg" alt="NEXX Cipher" />
+      <div class="brand">
+        <h1 class="glitch">NEXX Cipher</h1>
+        <p>52-Card Pull Engine v1.0</p>
+      </div>
+      <nav class="nav-links">
+        <a href="index.html" class="center-nav">Home</a>
+        <a href="tarot.html">Tarot</a>
+        <a href="pull.html" class="active">Cipher</a>
+        <a href="oracle.html">Oracle</a>
+        <a href="certainty.html">Certainty</a>
+        <a href="premium.html" class="premium-nav">Premium</a>
+      </nav>
+      <div class="status-bar">
+        <span>Deck status</span>
+        <strong id="deck-status">52 / 52 ready</strong>
+      </div>
+    </header>
+
+    <section class="question-panel panel">
+      <h2 class="section-title">Your question</h2>
+      <div class="question-grid">
+        <div class="field">
+          <label for="question-type">Question type</label>
+          <select id="question-type" aria-describedby="question-type-hint"></select>
+          <p class="field-hint" id="question-type-hint">Open reading on any topic.</p>
+        </div>
+        <div class="field field-grow">
+          <label for="question-text">What do you want to know?</label>
+          <textarea id="question-text" rows="2" maxlength="280"
+            placeholder="e.g. Should I take the new project? Is this connection worth my bandwidth?"></textarea>
+        </div>
+      </div>
+    </section>
+
+    <section class="pull-controls panel">
+      <div class="pull-row">
+        <label for="pull-count">Cards to pull</label>
+        <div class="pull-count-wrap">
+          <input type="range" id="pull-count" min="1" max="52" value="5" />
+          <output id="pull-count-label">5</output>
+        </div>
+      </div>
+      <div class="pull-presets">
+        <button type="button" class="preset" data-count="1">1</button>
+        <button type="button" class="preset" data-count="3">3</button>
+        <button type="button" class="preset" data-count="5">5</button>
+        <button type="button" class="preset" data-count="7">7</button>
+        <button type="button" class="preset" data-count="13">13</button>
+        <button type="button" class="preset primary" data-count="52">All 52</button>
+      </div>
+      <div class="actions">
+        <button type="button" class="primary" id="btn-pull">Pull Cards</button>
+        <button type="button" id="btn-reshuffle">Reshuffle Deck</button>
+        <button type="button" id="btn-export">Export Spread</button>
+      </div>
+      <p class="pull-hint" id="pull-hint">Every pull includes a final <strong>Clarity</strong> card (+1). Reshuffle when the deck runs low.</p>
+    </section>
+
+    <section class="spread-section" id="spread-section" hidden>
+      <div class="spread-header">
+        <h2>Your spread</h2>
+        <span class="spread-meta" id="spread-meta">—</span>
+      </div>
+      <div class="spread-grid" id="spread-grid" aria-live="polite"></div>
+    </section>
+
+    <section class="answer-panel panel" id="answer-panel" hidden>
+      <div class="answer-header">
+        <h2>Generated answer</h2>
+        <span class="verdict-badge" id="verdict-badge" hidden></span>
+      </div>
+      <p class="answer-question" id="answer-question">—</p>
+      <div class="answer-lines" id="answer-lines"></div>
+      <div class="answer-synthesis">
+        <h3>▶ Synthesis</h3>
+        <p id="answer-synthesis">—</p>
+      </div>
+    </section>
+
+    <section class="card-detail panel" id="card-detail" hidden>
+      <p class="meta" id="detail-id">—</p>
+      <h2 id="detail-name">Select a card</h2>
+      <p class="keyword" id="detail-keyword">—</p>
+      <div class="nexx-move">
+        <h3>▶ NEXX Move</h3>
+        <p id="detail-move">—</p>
+      </div>
+      <p class="card-answer" id="detail-answer" hidden></p>
+    </section>
+
+    <footer>
+      NEXX Cipher © nexx · 52-card relief engine · <a href="index.html">Tarot mode</a>
+    </footer>
+  </div>
+  <script src="js/nexx-auth.js"></script>
+  <script src="js/auth-gate.js"></script>
+  <script src="js/nexx-certainty.js"></script>
+  <script src="js/readings.js"></script>
+  <script src="js/paywall.js"></script>
+  <script src="js/upsell.js"></script>
+  <script src="js/pull.js"></script>
+</body>
+</html>
