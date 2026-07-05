@@ -25,4 +25,4 @@ jobs:
           publish_branch: gh-pages
           force_orphan: true
           enable_jekyll: false
-          exclude_assets: .github,scripts,.git,vault/server.py,vault/store.py
+          exclude_assets: .github,scripts,vault/server.py,vault/store.py
