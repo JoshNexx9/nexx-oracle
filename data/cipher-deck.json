@@ -402,7 +402,7 @@
     "name": "Three of Cache",
     "keyword": "Triangulate.",
     "meaning": "Triangulate. (value / data / resource)",
-    "nexx_move": "Diversify: don't store everything in one folder.",
+    "nexx_move": "Collaborate on something that compounds.",
     "art": "assets/cipher/cache-3.png"
   },
   {
@@ -416,7 +416,7 @@
     "name": "Four of Cache",
     "keyword": "Four walls secure.",
     "meaning": "Four walls secure. (value / data / resource)",
-    "nexx_move": "Audit storage \u2014 disk, inbox, or mental clutter.",
+    "nexx_move": "Audit subscriptions and recurring costs today.",
     "art": "assets/cipher/cache-4.png"
   },
   {
@@ -430,7 +430,7 @@
     "name": "Five of Cache",
     "keyword": "Static spike.",
     "meaning": "Static spike. (value / data / resource)",
-    "nexx_move": "Leak detected. Patch the hole before filling the tank.",
+    "nexx_move": "Scarcity mindset \u2014 list what you already have.",
     "art": "assets/cipher/cache-5.png"
   },
   {
@@ -444,7 +444,7 @@
     "name": "Six of Cache",
     "keyword": "Harmonic restore.",
     "meaning": "Harmonic restore. (value / data / resource)",
-    "nexx_move": "Restore from backup. What worked before still works.",
+    "nexx_move": "Give generously from abundance, not debt.",
     "art": "assets/cipher/cache-6.png"
   },
   {
@@ -458,7 +458,7 @@
     "name": "Seven of Cache",
     "keyword": "Hold the line.",
     "meaning": "Hold the line. (value / data / resource)",
-    "nexx_move": "Hold value through volatility. Don't panic-sell your effort.",
+    "nexx_move": "Long game \u2014 keep contributing even off-cycle.",
     "art": "assets/cipher/cache-7.png"
   },
   {
@@ -472,7 +472,7 @@
     "name": "Eight of Cache",
     "keyword": "Full throttle.",
     "meaning": "Full throttle. (value / data / resource)",
-    "nexx_move": "Compound: stack a habit on a habit.",
+    "nexx_move": "Skill sprint. One tutorial, one shipped artifact.",
     "art": "assets/cipher/cache-8.png"
   },
   {
@@ -486,7 +486,7 @@
     "name": "Nine of Cache",
     "keyword": "Penultimate.",
     "meaning": "Penultimate. (value / data / resource)",
-    "nexx_move": "Harvest. Cash in one delayed reward.",
+    "nexx_move": "Almost there \u2014 don't quit before the payout.",
     "art": "assets/cipher/cache-9.png"
   },
   {
@@ -500,7 +500,7 @@
     "name": "Ten of Cache",
     "keyword": "Capacity max.",
     "meaning": "Capacity max. (value / data / resource)",
-    "nexx_move": "Wallet full, hands tired. Spend on rest, not more stuff.",
+    "nexx_move": "Wealth overload \u2014 simplify, don't hoard.",
     "art": "assets/cipher/cache-10.png"
   },
   {
@@ -514,7 +514,7 @@
     "name": "Jack of Cache",
     "keyword": "Scout packet.",
     "meaning": "Scout packet. (value / data / resource)",
-    "nexx_move": "Scout a deal, tool, or shortcut. Report back.",
+    "nexx_move": "Scout a new income or learning stream.",
     "art": "assets/cipher/cache-j.png"
   },
   {
@@ -528,7 +528,7 @@
     "name": "Queen of Cache",
     "keyword": "Deep receive.",
     "meaning": "Deep receive. (value / data / resource)",
-    "nexx_move": "Curate quality over quantity. Keep the best three.",
+    "nexx_move": "Receive help or payment without deflecting.",
     "art": "assets/cipher/cache-q.png"
   },
   {
@@ -542,7 +542,7 @@
     "name": "King of Cache",
     "keyword": "Command node.",
     "meaning": "Command node. (value / data / resource)",
-    "nexx_move": "Allocate resources like a CFO. Ruthless kindness.",
+    "nexx_move": "Command resources \u2014 budget, delegate, allocate.",
     "art": "assets/cipher/cache-k.png"
   },
   {
@@ -551,12 +551,12 @@
     "rank_name": "Ace",
     "suit": "grid",
     "suit_label": "Grid",
-    "suit_symbol": "\u25a3",
-    "suit_theme": "structure / grit / foundation",
+    "suit_symbol": "\u25a6",
+    "suit_theme": "structure / logic / systems",
     "name": "Ace of Grid",
     "keyword": "Raw ignition.",
-    "meaning": "Raw ignition. (structure / grit / foundation)",
-    "nexx_move": "Lay one brick. Foundation beats blueprint.",
+    "meaning": "Raw ignition. (structure / logic / systems)",
+    "nexx_move": "Sketch the system before you build.",
     "art": "assets/cipher/grid-a.png"
   },
   {
@@ -565,12 +565,12 @@
     "rank_name": "Two",
     "suit": "grid",
     "suit_label": "Grid",
-    "suit_symbol": "\u25a3",
-    "suit_theme": "structure / grit / foundation",
+    "suit_symbol": "\u25a6",
+    "suit_theme": "structure / logic / systems",
     "name": "Two of Grid",
     "keyword": "Dual channel.",
-    "meaning": "Dual channel. (structure / grit / foundation)",
-    "nexx_move": "Build in parallel \u2014 two small structures, same day.",
+    "meaning": "Dual channel. (structure / logic / systems)",
+    "nexx_move": "Two approaches \u2014 prototype both cheaply.",
     "art": "assets/cipher/grid-2.png"
   },
   {
@@ -579,12 +579,12 @@
     "rank_name": "Three",
     "suit": "grid",
     "suit_label": "Grid",
-    "suit_symbol": "\u25a3",
-    "suit_theme": "structure / grit / foundation",
+    "suit_symbol": "\u25a6",
+    "suit_theme": "structure / logic / systems",
     "name": "Three of Grid",
     "keyword": "Triangulate.",
-    "meaning": "Triangulate. (structure / grit / foundation)",
-    "nexx_move": "Tripod rule: three supports before you load weight.",
+    "meaning": "Triangulate. (structure / logic / systems)",
+    "nexx_move": "Ship a v0. Three features max.",
     "art": "assets/cipher/grid-3.png"
   },
   {
@@ -593,12 +593,12 @@
     "rank_name": "Four",
     "suit": "grid",
     "suit_label": "Grid",
-    "suit_symbol": "\u25a3",
-    "suit_theme": "structure / grit / foundation",
+    "suit_symbol": "\u25a6",
+    "suit_theme": "structure / logic / systems",
     "name": "Four of Grid",
     "keyword": "Four walls secure.",
-    "meaning": "Four walls secure. (structure / grit / foundation)",
-    "nexx_move": "Square the room. Clean desk, clear calendar block.",
+    "meaning": "Four walls secure. (structure / logic / systems)",
+    "nexx_move": "Rest is architecture. Block recovery on the calendar.",
     "art": "assets/cipher/grid-4.png"
   },
   {
@@ -607,12 +607,12 @@
     "rank_name": "Five",
     "suit": "grid",
     "suit_label": "Grid",
-    "suit_symbol": "\u25a3",
-    "suit_theme": "structure / grit / foundation",
+    "suit_symbol": "\u25a6",
+    "suit_theme": "structure / logic / systems",
     "name": "Five of Grid",
     "keyword": "Static spike.",
-    "meaning": "Static spike. (structure / grit / foundation)",
-    "nexx_move": "Crack in the wall. Fix it small before it spreads.",
+    "meaning": "Static spike. (structure / logic / systems)",
+    "nexx_move": "Conflict in the stack \u2014 name it, don't swallow it.",
     "art": "assets/cipher/grid-5.png"
   },
   {
@@ -621,12 +621,12 @@
     "rank_name": "Six",
     "suit": "grid",
     "suit_label": "Grid",
-    "suit_symbol": "\u25a3",
-    "suit_theme": "structure / grit / foundation",
+    "suit_symbol": "\u25a6",
+    "suit_theme": "structure / logic / systems",
     "name": "Six of Grid",
     "keyword": "Harmonic restore.",
-    "meaning": "Harmonic restore. (structure / grit / foundation)",
-    "nexx_move": "Return to routine. Same wake time, same walk.",
+    "meaning": "Harmonic restore. (structure / logic / systems)",
+    "nexx_move": "Ask for help. Systems need maintenance crews.",
     "art": "assets/cipher/grid-6.png"
   },
   {
@@ -635,12 +635,12 @@
     "rank_name": "Seven",
     "suit": "grid",
     "suit_label": "Grid",
-    "suit_symbol": "\u25a3",
-    "suit_theme": "structure / grit / foundation",
+    "suit_symbol": "\u25a6",
+    "suit_theme": "structure / logic / systems",
     "name": "Seven of Grid",
     "keyword": "Hold the line.",
-    "meaning": "Hold the line. (structure / grit / foundation)",
-    "nexx_move": "Defend the perimeter. One rule, enforced.",
+    "meaning": "Hold the line. (structure / logic / systems)",
+    "nexx_move": "Play defense. Protect what works.",
     "art": "assets/cipher/grid-7.png"
   },
   {
@@ -649,12 +649,12 @@
     "rank_name": "Eight",
     "suit": "grid",
     "suit_label": "Grid",
-    "suit_symbol": "\u25a3",
-    "suit_theme": "structure / grit / foundation",
+    "suit_symbol": "\u25a6",
+    "suit_theme": "structure / logic / systems",
     "name": "Eight of Grid",
     "keyword": "Full throttle.",
-    "meaning": "Full throttle. (structure / grit / foundation)",
-    "nexx_move": "Scale the scaffold. Systematize what worked once.",
+    "meaning": "Full throttle. (structure / logic / systems)",
+    "nexx_move": "Crunch mode \u2014 time-box it, then stop.",
     "art": "assets/cipher/grid-8.png"
   },
   {
@@ -663,12 +663,12 @@
     "rank_name": "Nine",
     "suit": "grid",
     "suit_label": "Grid",
-    "suit_symbol": "\u25a3",
-    "suit_theme": "structure / grit / foundation",
+    "suit_symbol": "\u25a6",
+    "suit_theme": "structure / logic / systems",
     "name": "Nine of Grid",
     "keyword": "Penultimate.",
-    "meaning": "Penultimate. (structure / grit / foundation)",
-    "nexx_move": "Renovation phase. Tear out one old habit.",
+    "meaning": "Penultimate. (structure / logic / systems)",
+    "nexx_move": "Night thoughts \u2014 write them down, sleep.",
     "art": "assets/cipher/grid-9.png"
   },
   {
@@ -677,12 +677,12 @@
     "rank_name": "Ten",
     "suit": "grid",
     "suit_label": "Grid",
-    "suit_symbol": "\u25a3",
-    "suit_theme": "structure / grit / foundation",
+    "suit_symbol": "\u25a6",
+    "suit_theme": "structure / logic / systems",
     "name": "Ten of Grid",
     "keyword": "Capacity max.",
-    "meaning": "Capacity max. (structure / grit / foundation)",
-    "nexx_move": "Load-bearing stress. Remove one structural lie.",
+    "meaning": "Capacity max. (structure / logic / systems)",
+    "nexx_move": "Burden overload \u2014 drop one obligation today.",
     "art": "assets/cipher/grid-10.png"
   },
   {
@@ -691,12 +691,12 @@
     "rank_name": "Jack",
     "suit": "grid",
     "suit_label": "Grid",
-    "suit_symbol": "\u25a3",
-    "suit_theme": "structure / grit / foundation",
+    "suit_symbol": "\u25a6",
+    "suit_theme": "structure / logic / systems",
     "name": "Jack of Grid",
     "keyword": "Scout packet.",
-    "meaning": "Scout packet. (structure / grit / foundation)",
-    "nexx_move": "Survey the site. Map before you dig.",
+    "meaning": "Scout packet. (structure / logic / systems)",
+    "nexx_move": "Curious builder \u2014 read docs, break nothing.",
     "art": "assets/cipher/grid-j.png"
   },
   {
@@ -705,12 +705,12 @@
     "rank_name": "Queen",
     "suit": "grid",
     "suit_label": "Grid",
-    "suit_symbol": "\u25a3",
-    "suit_theme": "structure / grit / foundation",
+    "suit_symbol": "\u25a6",
+    "suit_theme": "structure / logic / systems",
     "name": "Queen of Grid",
     "keyword": "Deep receive.",
-    "meaning": "Deep receive. (structure / grit / foundation)",
-    "nexx_move": "Maintain what others ignore. Quiet upkeep wins.",
+    "meaning": "Deep receive. (structure / logic / systems)",
+    "nexx_move": "Clear boundaries. Structure with kindness.",
     "art": "assets/cipher/grid-q.png"
   },
   {
@@ -719,12 +719,12 @@
     "rank_name": "King",
     "suit": "grid",
     "suit_label": "Grid",
-    "suit_symbol": "\u25a3",
-    "suit_theme": "structure / grit / foundation",
+    "suit_symbol": "\u25a6",
+    "suit_theme": "structure / logic / systems",
     "name": "King of Grid",
     "keyword": "Command node.",
-    "meaning": "Command node. (structure / grit / foundation)",
-    "nexx_move": "Architect the week. Block time like load-bearing walls.",
+    "meaning": "Command node. (structure / logic / systems)",
+    "nexx_move": "Architect the week. Calendar is code.",
     "art": "assets/cipher/grid-k.png"
   }
 ]
