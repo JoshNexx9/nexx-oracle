@@ -1,0 +1,16 @@
+{
+  "segments": [
+    { "label": "Lucky Again", "color": "#ffd56b", "weight": 14, "message": "The wheel remembers you. Fortune tilts your way — woot.", "certainty": 0.95 },
+    { "label": "Star Light", "color": "#00f0ff", "weight": 12, "message": "Clear sky protocol active. Hope is operational, not decorative.", "certainty": 0.9 },
+    { "label": "Yes Path", "color": "#8b5cff", "weight": 11, "message": "The road opens. Proceed — convergence favors you.", "certainty": 0.88 },
+    { "label": "Wheel Turns", "color": "#ff2bd6", "weight": 10, "message": "Cycle shift detected. What stalled moves without force.", "certainty": 0.85 },
+    { "label": "Safe Harbor", "color": "#00ff9f", "weight": 10, "message": "You are held. Rest inside the outcome already forming.", "certainty": 0.92 },
+    { "label": "Double Signal", "color": "#ff6b9d", "weight": 9, "message": "Two confirmations incoming. Trust the repeat.", "certainty": 0.87 },
+    { "label": "Josh Frequency", "color": "#ffd56b", "weight": 8, "message": "Nexx luck band engaged. Again.", "certainty": 0.93 },
+    { "label": "Mercury Rise", "color": "#a8d4ff", "weight": 8, "message": "Messages, money, and matches accelerate.", "certainty": 0.8 },
+    { "label": "Tower Clear", "color": "#ff4444", "weight": 6, "message": "False structure falls. Good architecture remains.", "certainty": 0.75 },
+    { "label": "Moon Pass", "color": "#6a7a9a", "weight": 6, "message": "Fog lifts at its own pace. Don't rush the reveal.", "certainty": 0.7 },
+    { "label": "Pause · Align", "color": "#7a8fa8", "weight": 8, "message": "Not denial — calibration. The yes is still forming.", "certainty": 0.65 },
+    { "label": "Wild Card", "color": "#ffffff", "weight": 8, "message": "Unmapped blessing. Stay open — luck wears a mask.", "certainty": 0.82 }
+  ]
+}

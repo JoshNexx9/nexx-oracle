@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="NEXX Vault — encrypted personal file portal" />
+  <meta name="theme-color" content="#05050f" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <title>NEXX Vault · Secure Portal</title>
+  <link rel="stylesheet" href="css/nexx-tarot.css" />
+  <link rel="icon" href="assets/logo.jpg" />
+</head>
+<body class="scanlines vault-mode">
+  <div class="app">
+    <header>
+      <img class="logo" src="assets/logo.jpg" alt="NEXX Vault" />
+      <div class="brand">
+        <h1 class="glitch">NEXX Vault</h1>
+        <p>Encrypted personal portal</p>
+      </div>
+      <nav class="nav-links">
+        <a href="index.html" class="center-nav">Home</a>
+        <a href="vault.html" class="active">Vault</a>
+        <a href="tarot.html">Tarot</a>
+        <a href="premium.html" class="premium-nav">Premium</a>
+      </nav>
+    </header>
+
+    <section class="panel deploy-note" id="vault-deploy-note" hidden>
+      <p><strong>Vault is local-only.</strong> Encrypted file storage runs on your home machine via <code>nexx-tarot</code> — not on the public website.</p>
+    </section>
+
+    <!-- LOGIN -->
+    <section class="panel vault-login" id="login-panel">
+      <h2 class="section-title">Authenticate</h2>
+      <p class="vault-intro">Private encrypted drop box. Files are encrypted at rest on your machine. Login required.</p>
+      <form id="login-form" class="vault-form">
+        <div class="field">
+          <label for="username">Username</label>
+          <input type="text" id="username" name="username" value="nexx" autocomplete="username" required />
+        </div>
+        <div class="field">
+          <label for="password">Password</label>
+          <input type="password" id="password" name="password" autocomplete="current-password" required />
+        </div>
+        <p class="field-hint error-hint" id="login-error" hidden></p>
+        <button type="submit" class="primary">Unlock Vault</button>
+      </form>
+      <p class="vault-security-note">
+        🔒 AES-256 at rest · Session auth · LAN access from iPhone via your machine's IP
+      </p>
+    </section>
+
+    <!-- VAULT APP -->
+    <section id="vault-app" hidden>
+      <div class="vault-toolbar panel">
+        <div class="vault-user">
+          <span class="meta">signed in</span>
+          <strong id="vault-user">nexx</strong>
+        </div>
+        <div class="vault-access panel-inset" id="vault-access">
+          <span class="meta">iPhone / other devices</span>
+          <code id="lan-url">—</code>
+        </div>
+        <div class="actions">
+          <button type="button" id="btn-logout">Logout</button>
+        </div>
+      </div>
+
+      <section class="panel vault-upload-zone" id="upload-zone">
+        <h2 class="section-title">Upload</h2>
+        <p class="field-hint">Tap to pick files from iPhone, or drag & drop on desktop.</p>
+        <input type="file" id="file-input" multiple hidden />
+        <button type="button" class="primary" id="btn-pick">Choose Files</button>
+        <p class="upload-status" id="upload-status"></p>
+      </section>
+
+      <section class="panel">
+        <h2 class="section-title">Your files <span class="file-count" id="file-count"></span></h2>
+        <div class="vault-files" id="file-list">
+          <p class="field-hint">No files yet.</p>
+        </div>
+      </section>
+    </section>
+
+    <footer>
+      NEXX Vault © nexx · encrypted at rest · personal use only
+    </footer>
+  </div>
+  <script src="js/vault.js"></script>
+</body>
+</html>

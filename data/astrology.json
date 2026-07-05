@@ -1,0 +1,28 @@
+{
+  "signs": [
+    { "id": "aries", "symbol": "♈", "element": "Fire", "modality": "Cardinal", "ruler": "Mars", "keyword": "Ignition · courage · first spark", "tarot": "The Emperor · Strength", "myth": "Golden fleece · war-god as pioneer" },
+    { "id": "taurus", "symbol": "♉", "element": "Earth", "modality": "Fixed", "ruler": "Venus", "keyword": "Root · pleasure · persistence", "tarot": "The Hierophant · Empress", "myth": "Europa · bull of heaven · sacred body" },
+    { "id": "gemini", "symbol": "♊", "element": "Air", "modality": "Mutable", "ruler": "Mercury", "keyword": "Signal · twin · curiosity", "tarot": "The Lovers · Magician", "myth": "Castor & Pollux · messenger gods" },
+    { "id": "cancer", "symbol": "♋", "element": "Water", "modality": "Cardinal", "ruler": "Moon", "keyword": "Shell · memory · nurture", "tarot": "The Chariot · High Priestess", "myth": "Crab of Hydra · lunar tides" },
+    { "id": "leo", "symbol": "♌", "element": "Fire", "modality": "Fixed", "ruler": "Sun", "keyword": "Crown · radiance · heart", "tarot": "Strength · Sun", "myth": "Nemean lion · solar kingship" },
+    { "id": "virgo", "symbol": "♍", "element": "Earth", "modality": "Mutable", "ruler": "Mercury", "keyword": "Harvest · discernment · service", "tarot": "The Hermit · Magician", "myth": "Demeter's grain · vestal precision" },
+    { "id": "libra", "symbol": "♎", "element": "Air", "modality": "Cardinal", "ruler": "Venus", "keyword": "Balance · beauty · covenant", "tarot": "Justice · Empress", "myth": "Scales of Ma'at · sacred marriage" },
+    { "id": "scorpio", "symbol": "♏", "element": "Water", "modality": "Fixed", "ruler": "Pluto", "keyword": "Depth · transformation · truth", "tarot": "Death · Moon", "myth": "Scorpion of Orion · underworld gates" },
+    { "id": "sagittarius", "symbol": "♐", "element": "Fire", "modality": "Mutable", "ruler": "Jupiter", "keyword": "Arrow · quest · expansion", "tarot": "Temperance · Wheel", "myth": "Centaur Chiron · philosopher's fire" },
+    { "id": "capricorn", "symbol": "♑", "element": "Earth", "modality": "Cardinal", "ruler": "Saturn", "keyword": "Peak · structure · mastery", "tarot": "The Devil · World", "myth": "Sea-goat · Pan ascending" },
+    { "id": "aquarius", "symbol": "♒", "element": "Air", "modality": "Fixed", "ruler": "Uranus", "keyword": "Wave · future · liberation", "tarot": "The Star · Fool", "myth": "Ganymede · water-bearer of gods" },
+    { "id": "pisces", "symbol": "♓", "element": "Water", "modality": "Mutable", "ruler": "Neptune", "keyword": "Ocean · dream · dissolution", "tarot": "The Moon · High Priestess", "myth": "Fish that saved Aphrodite · cosmic sea" }
+  ],
+  "planets": [
+    { "id": "sun", "keyword": "Core self · vitality · certainty", "tarot": "The Sun", "science": "Photosynthesis metaphor: you are the light source of your system." },
+    { "id": "moon", "keyword": "Emotion · rhythm · interior", "tarot": "The High Priestess", "science": "Lunar tidal coupling — feelings ebb and flow lawfully." },
+    { "id": "mercury", "keyword": "Mind · speech · code", "tarot": "The Magician", "science": "Information theory: signal vs noise." },
+    { "id": "venus", "keyword": "Love · value · attraction", "tarot": "The Empress", "science": "Oxytocin bonding · aesthetic preference algorithms." },
+    { "id": "mars", "keyword": "Drive · conflict · action", "tarot": "The Tower", "science": "Adrenaline cascade — energy for decisive moves." },
+    { "id": "jupiter", "keyword": "Luck · growth · faith", "tarot": "Wheel of Fortune", "science": "Power laws: small advantages compound." },
+    { "id": "saturn", "keyword": "Time · discipline · karma", "tarot": "The World", "science": "Delayed gratification predicts long outcomes." },
+    { "id": "uranus", "keyword": "Shock · innovation · break", "tarot": "The Fool", "science": "Phase disruption in complex systems." },
+    { "id": "neptune", "keyword": "Dream · mystic · dissolve", "tarot": "The Moon", "science": "Unconscious pattern completion." },
+    { "id": "pluto", "keyword": "Death · rebirth · power", "tarot": "Judgement", "science": "Deep transformation at cellular and social layers." }
+  ]
+}

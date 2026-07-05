@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="NEXX Premium — extended personal reading with Josh Nexx. $50 via Venmo." />
+  <meta name="theme-color" content="#05050f" />
+  <title>NEXX Premium · Extended Reading · Josh Nexx</title>
+  <link rel="stylesheet" href="css/nexx-tarot.css" />
+  <link rel="icon" href="assets/logo.jpg" />
+</head>
+<body class="scanlines premium-mode">
+  <div class="app">
+    <header>
+      <img class="logo" src="assets/logo.jpg" alt="NEXX Premium" />
+      <div class="brand">
+        <h1 class="glitch">NEXX Premium</h1>
+        <p>Extended reading · Josh Nexx</p>
+      </div>
+      <nav class="nav-links">
+        <a href="index.html" class="center-nav">Home</a>
+        <a href="certainty.html">Certainty</a>
+        <a href="tarot.html">Tarot</a>
+        <a href="premium.html" class="active premium-nav">Premium</a>
+      </nav>
+      <div class="status-bar">
+        <span>Session</span>
+        <strong>$50 · Venmo</strong>
+      </div>
+    </header>
+
+    <section class="compare-panel panel" id="compare-panel">
+      <h2 class="section-title">Free vs Premium</h2>
+      <div class="compare-grid">
+        <div class="compare-col">
+          <h3>Free</h3>
+          <ul>
+            <li>Daily card + Clarity</li>
+            <li>Cipher pulls</li>
+            <li>Oracle sigils / runes</li>
+            <li>Social Studio basics</li>
+          </ul>
+        </div>
+        <div class="compare-col compare-premium">
+          <h3>◆ Premium · $50</h3>
+          <ul>
+            <li>7-card Celtic spread + Clarity</li>
+            <li>Deep synthesis for YOUR question</li>
+            <li>Personal letter from Josh Nexx</li>
+            <li>Downloadable session report</li>
+            <li>Premium Studio templates</li>
+            <li>Priority personal follow-up</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <div id="paywall-mount"></div>
+
+    <section id="premium-app" hidden>
+      <div class="premium-unlocked panel">
+        <div class="premium-badge">◆ PREMIUM UNLOCKED</div>
+        <h2>Extended reading for <span id="intake-name">—</span></h2>
+        <p class="keyword" id="intake-question">—</p>
+        <div class="actions">
+          <button type="button" class="primary" id="btn-regenerate">New pull (same session)</button>
+          <button type="button" id="btn-export-premium">Download report</button>
+          <button type="button" id="btn-new-session">New paid session</button>
+        </div>
+      </div>
+
+      <section class="premium-spread-wrap">
+        <h2 class="section-title">Your spread</h2>
+        <div class="premium-spread" id="premium-spread"></div>
+      </section>
+
+      <section class="panel">
+        <h2 class="section-title">Position readings</h2>
+        <div id="premium-lines"></div>
+      </section>
+
+      <section class="panel answer-synthesis">
+        <h3>▶ Synthesis</h3>
+        <p id="premium-synthesis">—</p>
+      </section>
+
+      <section class="panel premium-letter-panel">
+        <h3>✉ Personal letter · Josh Nexx</h3>
+        <pre id="premium-letter" class="copy-text">—</pre>
+      </section>
+
+      <section class="panel studio-footer-cta">
+        <p>Want to go deeper live? <strong>Book a consultation</strong> — <a href="https://www.tiktok.com/@JoshNexx9" target="_blank" rel="noopener">@JoshNexx9</a> · Venmo <a href="https://venmo.com/nexxsociety" target="_blank" rel="noopener">@nexxsociety</a></p>
+      </section>
+    </section>
+
+    <footer>
+      NEXX Premium © Josh Nexx · <a href="https://venmo.com/nexxsociety" target="_blank" rel="noopener">@nexxsociety</a> · <a href="https://www.tiktok.com/@JoshNexx9" target="_blank" rel="noopener">@JoshNexx9</a>
+    </footer>
+  </div>
+  <script src="js/nexx-auth.js"></script>
+  <script src="js/auth-gate.js"></script>
+  <script src="js/copy.js"></script>
+  <script src="js/nexx-certainty.js"></script>
+  <script src="js/readings.js"></script>
+  <script src="js/paywall.js"></script>
+  <script src="js/premium.js"></script>
+</body>
+</html>

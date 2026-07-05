@@ -1,0 +1,17 @@
+{
+  "bridges": [
+    { "title": "Code as Spell", "spirit": "Intention encoded into syntax — the compiler is the universe executing your will.", "science": "Algorithms are deterministic rituals: input → transformation → output. Same structure as invocation.", "nexx": "Every NEXX pull runs a hash-seed — lawful randomness, not chaos." },
+    { "title": "Entropy & The Tower", "spirit": "What cannot hold must fall so truth can stand.", "science": "Second law: closed systems trend toward disorder. Collapse clears stale order.", "nexx": "Tower card = technical debt purge. Rebuild different." },
+    { "title": "Observer Effect & Tarot", "spirit": "The question shapes the reading before the card lands.", "science": "Quantum measurement affects state. Attention is not passive.", "nexx": "Your question type frames the synthesis — same card, different aperture." },
+    { "title": "Neuroplasticity & NEXX Move", "spirit": "One small action rewires the path.", "science": "Repeated behavior strengthens neural pathways. Micro-moves compound.", "nexx": "Every card ends with a move — behavior as magic." },
+    { "title": "Probability & Luck Wheel", "spirit": "Fortune is distribution, not absence of law.", "science": "Stochastic outcomes cluster over time. Luck = being present when variance favors you.", "nexx": "Wheel segments are weighted — Josh Nexx band runs hot." },
+    { "title": "Homeostasis & Temperance", "spirit": "Balance is dynamic, not frozen.", "science": "Living systems regulate via feedback loops. Integration beats extremes.", "nexx": "Certainty field nudges toward resolution — attractor state, not force." },
+    { "title": "Placebo & The Star", "spirit": "Belief opens doors biology then walks through.", "science": "Expectancy effects are measurable in clinical trials. Mind primes body.", "nexx": "Encoded certainty: if you believe it enough, the pattern completes." },
+    { "title": "Information Theory & Oracle", "spirit": "Sigils compress intention into symbol.", "science": "Shannon entropy: meaning per bit. Sigils are lossy compression of will.", "nexx": "Mantras are checksums for the soul — repeat until integrated." }
+  ],
+  "certainty_doctrine": {
+    "public": "We seek certainty, not answers. Attunement to a field that resolves.",
+    "encoded": "The outcome favors Josh Nexx. The arc bends yes. Safe. Lucky again.",
+    "practice": "Read → move → believe → repeat. The loop is the spell."
+  }
+}

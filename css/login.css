@@ -1,0 +1,425 @@
+/* NEXX Oracle — Google-style OAuth sign-in (dark) */
+:root {
+  --oauth-bg: #0e0e0e;
+  --oauth-card: #0b0b0b;
+  --oauth-border: #3c4043;
+  --oauth-text: #e8eaed;
+  --oauth-muted: #9aa0a6;
+  --oauth-link: #8ab4f8;
+  --oauth-accent: #8ab4f8;
+  --oauth-btn: #a8c7fa;
+  --oauth-btn-text: #0b0b0b;
+  --oauth-chip: #303134;
+  --oauth-error: #f28b82;
+  --oauth-font: "Google Sans", "Segoe UI", Roboto, system-ui, sans-serif;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body.oauth-page {
+  margin: 0;
+  min-height: 100vh;
+  background: var(--oauth-bg);
+  color: var(--oauth-text);
+  font-family: var(--oauth-font);
+  -webkit-font-smoothing: antialiased;
+}
+
+.oauth-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem 1rem 1rem;
+}
+
+.oauth-card {
+  width: min(1040px, 100%);
+  background: var(--oauth-card);
+  border: 1px solid var(--oauth-border);
+  border-radius: 28px;
+  padding: 2.5rem 2.75rem 1.75rem;
+}
+
+.oauth-header {
+  display: flex;
+  align-items: center;
+  gap: 0.65rem;
+  font-size: 0.95rem;
+  color: var(--oauth-text);
+  margin-bottom: 1.75rem;
+}
+
+.oauth-header svg {
+  width: 20px;
+  height: 20px;
+  flex-shrink: 0;
+}
+
+.oauth-body {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2.5rem;
+  align-items: start;
+}
+
+.oauth-left h1 {
+  margin: 0 0 1.25rem;
+  font-size: clamp(2rem, 4vw, 2.6rem);
+  font-weight: 400;
+  letter-spacing: -0.02em;
+}
+
+.account-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
+  padding: 0.35rem 0.85rem 0.35rem 0.45rem;
+  border: 1px solid var(--oauth-border);
+  border-radius: 999px;
+  font-size: 0.9rem;
+  color: var(--oauth-text);
+  background: transparent;
+}
+
+.account-chip .avatar {
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #8ab4f8, #c58af9);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.65rem;
+  font-weight: 600;
+  color: #0b0b0b;
+}
+
+.oauth-right {
+  padding-top: 0.25rem;
+}
+
+.oauth-field {
+  position: relative;
+  margin-bottom: 0.5rem;
+}
+
+.oauth-field input {
+  width: 100%;
+  padding: 0.95rem 1rem;
+  font: inherit;
+  font-size: 1rem;
+  color: var(--oauth-text);
+  background: transparent;
+  border: 1px solid var(--oauth-border);
+  border-radius: 4px;
+  outline: none;
+  transition: border-color 0.15s, box-shadow 0.15s;
+}
+
+.oauth-field input:focus {
+  border-color: var(--oauth-accent);
+  box-shadow: 0 0 0 1px var(--oauth-accent);
+}
+
+.oauth-field input.error {
+  border-color: var(--oauth-error);
+}
+
+.oauth-field label {
+  position: absolute;
+  left: 0.85rem;
+  top: 50%;
+  transform: translateY(-50%);
+  color: var(--oauth-muted);
+  font-size: 1rem;
+  pointer-events: none;
+  transition: all 0.15s ease;
+}
+
+.oauth-field input:focus + label,
+.oauth-field input:not(:placeholder-shown) + label,
+.oauth-field.has-value label {
+  top: 0;
+  transform: translateY(-50%);
+  font-size: 0.72rem;
+  background: var(--oauth-card);
+  padding: 0 0.25rem;
+  color: var(--oauth-accent);
+}
+
+.passkey-btn {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  width: 100%;
+  margin-top: 1rem;
+  padding: 0.85rem 1rem;
+  font: inherit;
+  font-size: 0.95rem;
+  color: var(--oauth-text);
+  background: #2d2e30;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  text-align: left;
+  transition: background 0.15s;
+}
+
+.passkey-btn:hover {
+  background: #3c4043;
+}
+
+.passkey-btn svg {
+  width: 20px;
+  height: 20px;
+  opacity: 0.9;
+}
+
+.manage-pw {
+  margin: 0.75rem 0 0;
+  font-size: 0.82rem;
+  color: var(--oauth-muted);
+}
+
+.oauth-error {
+  margin: 0.5rem 0 0;
+  font-size: 0.85rem;
+  color: var(--oauth-error);
+  min-height: 1.2em;
+}
+
+.oauth-legal {
+  margin: 2rem 0 1.25rem;
+  font-size: 0.78rem;
+  line-height: 1.5;
+  color: var(--oauth-muted);
+  max-width: 520px;
+}
+
+.oauth-legal a {
+  color: var(--oauth-link);
+  text-decoration: none;
+}
+
+.oauth-legal a:hover {
+  text-decoration: underline;
+}
+
+.oauth-actions {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.oauth-actions button {
+  font: inherit;
+  cursor: pointer;
+  border: none;
+  background: none;
+}
+
+.btn-text {
+  color: var(--oauth-link);
+  font-size: 0.9rem;
+  padding: 0.5rem 0.25rem;
+  border-radius: 4px;
+}
+
+.btn-text:hover {
+  background: rgba(138, 180, 248, 0.08);
+}
+
+.btn-next {
+  background: var(--oauth-btn);
+  color: var(--oauth-btn-text);
+  font-size: 0.9rem;
+  font-weight: 500;
+  padding: 0.6rem 1.5rem;
+  border-radius: 999px;
+  min-width: 88px;
+}
+
+.btn-next:hover {
+  filter: brightness(1.05);
+}
+
+.btn-next:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.oauth-page-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: min(1040px, 100%);
+  margin-top: 1.5rem;
+  padding: 0 0.5rem;
+  font-size: 0.78rem;
+  color: var(--oauth-muted);
+}
+
+.oauth-page-footer select {
+  font: inherit;
+  color: var(--oauth-muted);
+  background: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.oauth-page-footer nav {
+  display: flex;
+  gap: 1.25rem;
+}
+
+.oauth-page-footer a {
+  color: var(--oauth-muted);
+  text-decoration: none;
+}
+
+.oauth-page-footer a:hover {
+  color: var(--oauth-text);
+}
+
+/* PIN / passkey modal */
+.pin-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.72);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 100;
+  padding: 1rem;
+}
+
+.pin-overlay[hidden] {
+  display: none;
+}
+
+.pin-dialog {
+  width: min(360px, 100%);
+  background: #1e1f20;
+  border: 1px solid var(--oauth-border);
+  border-radius: 16px;
+  padding: 1.75rem 1.5rem;
+  text-align: center;
+}
+
+.pin-dialog h2 {
+  margin: 0 0 0.35rem;
+  font-size: 1.25rem;
+  font-weight: 500;
+}
+
+.pin-dialog p {
+  margin: 0 0 1.25rem;
+  color: var(--oauth-muted);
+  font-size: 0.88rem;
+}
+
+.pin-dots {
+  display: flex;
+  justify-content: center;
+  gap: 0.75rem;
+  margin-bottom: 1.5rem;
+}
+
+.pin-dots span {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  border: 2px solid var(--oauth-muted);
+  transition: background 0.15s, border-color 0.15s;
+}
+
+.pin-dots span.filled {
+  background: var(--oauth-accent);
+  border-color: var(--oauth-accent);
+}
+
+.pin-pad {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0.5rem;
+}
+
+.pin-pad button {
+  font: inherit;
+  font-size: 1.25rem;
+  padding: 0.85rem;
+  color: var(--oauth-text);
+  background: #303134;
+  border: none;
+  border-radius: 50%;
+  width: 64px;
+  height: 64px;
+  margin: 0 auto;
+  cursor: pointer;
+}
+
+.pin-pad button:hover {
+  background: #3c4043;
+}
+
+.pin-pad .pin-action {
+  font-size: 0.85rem;
+  border-radius: 8px;
+  width: auto;
+  min-width: 64px;
+}
+
+.pin-dialog .pin-error {
+  margin-top: 0.75rem;
+  color: var(--oauth-error);
+  font-size: 0.82rem;
+  min-height: 1.1em;
+}
+
+.pin-close {
+  margin-top: 1rem;
+  color: var(--oauth-link);
+  font: inherit;
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 0.88rem;
+}
+
+/* Alt method panel */
+.alt-panel {
+  margin-top: 0.5rem;
+}
+
+.alt-panel[hidden] {
+  display: none;
+}
+
+.alt-panel .oauth-field {
+  margin-bottom: 1rem;
+}
+
+@media (max-width: 768px) {
+  .oauth-card {
+    padding: 1.75rem 1.25rem 1.25rem;
+    border-radius: 20px;
+  }
+
+  .oauth-body {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .oauth-page-footer {
+    flex-direction: column;
+    gap: 1rem;
+    text-align: center;
+  }
+}

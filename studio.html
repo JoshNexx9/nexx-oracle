@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="NEXX Social Studio — generate TikTok & social posts from your card pulls." />
+  <meta name="theme-color" content="#05050f" />
+  <title>NEXX Studio · Social Post Generator</title>
+  <link rel="stylesheet" href="css/nexx-tarot.css" />
+  <link rel="icon" href="assets/logo.jpg" />
+</head>
+<body class="scanlines studio-mode">
+  <div class="app">
+    <header>
+      <img class="logo" src="assets/logo.jpg" alt="NEXX Studio" />
+      <div class="brand">
+        <h1 class="glitch">NEXX Studio</h1>
+        <p>Social post generator · @JoshNexx9</p>
+      </div>
+      <nav class="nav-links">
+        <a href="index.html" class="center-nav">Home</a>
+        <a href="studio.html" class="active">Studio</a>
+        <a href="grow.html" class="grow-nav">Grow</a>
+        <a href="tarot.html">Tarot</a>
+        <a href="premium.html" class="premium-nav">Premium</a>
+      </nav>
+      <div class="status-bar">
+        <span>TikTok</span>
+        <strong><a href="https://www.tiktok.com/@JoshNexx9" target="_blank" rel="noopener">@JoshNexx9</a></strong>
+      </div>
+    </header>
+
+    <section class="panel studio-hero">
+      <p class="studio-tagline">Pull a card. Get a full social post — hook, caption, on-screen text, hashtags, CTA. Copy. Post. Book consultations.</p>
+      <a class="tiktok-badge" href="https://www.tiktok.com/@JoshNexx9" target="_blank" rel="noopener">
+        ▶ Follow @JoshNexx9 on TikTok
+      </a>
+    </section>
+
+    <section class="panel studio-controls">
+      <div class="studio-control-grid">
+        <div class="field">
+          <label for="platform">Platform</label>
+          <select id="platform">
+            <option value="tiktok">TikTok</option>
+            <option value="reels">Instagram Reels</option>
+            <option value="carousel">Instagram Carousel</option>
+            <option value="threads">Threads / X</option>
+            <option value="story">IG Story (3 slides)</option>
+          </select>
+        </div>
+        <div class="field">
+          <label for="vibe">Post vibe</label>
+          <select id="vibe">
+            <option value="pov">POV · you pulled this</option>
+            <option value="storytime">Storytime · cyberpunk reading</option>
+            <option value="hottake">Hot take · no fluff</option>
+            <option value="soft">Soft reading · gentle</option>
+            <option value="cta">CTA heavy · book consult</option>
+            <option value="aesthetic">Aesthetic · visual only + caption</option>
+            <option value="premium" class="premium-opt">◆ Premium · $50 pack</option>
+          </select>
+        </div>
+        <div class="field">
+          <label for="deck-source">Card source</label>
+          <select id="deck-source">
+            <option value="random">Random card</option>
+            <option value="major">Random Major Arcana</option>
+            <option value="pick">Pick a card…</option>
+          </select>
+        </div>
+        <div class="field" id="card-pick-wrap" hidden>
+          <label for="card-pick">Card</label>
+          <select id="card-pick"></select>
+        </div>
+      </div>
+      <div class="field field-grow">
+        <label for="consult-cta">Consultation CTA (editable)</label>
+        <input type="text" id="consult-cta" value="Book a consultation — DM CONSULT on TikTok @JoshNexx9 or link in bio." />
+      </div>
+      <div class="actions">
+        <button type="button" class="primary" id="btn-generate">Generate Post</button>
+        <button type="button" id="btn-copy-all">Copy Everything</button>
+        <button type="button" id="btn-export-card">Export TikTok Image</button>
+        <button type="button" id="btn-grow">Growth Lab →</button>
+      </div>
+    </section>
+
+    <section class="studio-output" id="studio-output" hidden>
+      <div class="studio-preview panel">
+        <img id="post-card-art" src="assets/card-back.jpg" alt="Card art" />
+        <div class="preview-meta">
+          <h2 id="post-card-name">—</h2>
+          <p id="post-card-keyword">—</p>
+        </div>
+      </div>
+
+      <div class="studio-blocks">
+        <article class="copy-block panel" data-block="hook">
+          <div class="copy-block-head">
+            <h3>🎣 Hook <span class="block-tag">first 3 seconds</span></h3>
+            <button type="button" class="btn-copy" data-target="hook">Copy</button>
+          </div>
+          <pre id="out-hook" class="copy-text"></pre>
+        </article>
+
+        <article class="copy-block panel" data-block="onscreen">
+          <div class="copy-block-head">
+            <h3>📺 On-screen text <span class="block-tag">video layers</span></h3>
+            <button type="button" class="btn-copy" data-target="onscreen">Copy</button>
+          </div>
+          <pre id="out-onscreen" class="copy-text"></pre>
+        </article>
+
+        <article class="copy-block panel" data-block="caption">
+          <div class="copy-block-head">
+            <h3>✍️ Caption <span class="block-tag">paste to post</span></h3>
+            <button type="button" class="btn-copy" data-target="caption">Copy</button>
+          </div>
+          <pre id="out-caption" class="copy-text"></pre>
+        </article>
+
+        <article class="copy-block panel" data-block="hashtags">
+          <div class="copy-block-head">
+            <h3># Hashtags</h3>
+            <button type="button" class="btn-copy" data-target="hashtags">Copy</button>
+          </div>
+          <pre id="out-hashtags" class="copy-text"></pre>
+        </article>
+
+        <article class="copy-block panel cta-block" data-block="cta">
+          <div class="copy-block-head">
+            <h3>📲 Call to action</h3>
+            <button type="button" class="btn-copy" data-target="cta">Copy</button>
+          </div>
+          <pre id="out-cta" class="copy-text"></pre>
+        </article>
+
+        <article class="copy-block panel" data-block="extras">
+          <div class="copy-block-head">
+            <h3>🎬 Production notes <span class="block-tag">optional layers</span></h3>
+            <button type="button" class="btn-copy" data-target="extras">Copy</button>
+          </div>
+          <pre id="out-extras" class="copy-text"></pre>
+        </article>
+
+        <article class="copy-block panel pin-block" data-block="pin">
+          <div class="copy-block-head">
+            <h3>📌 Pin comment</h3>
+            <button type="button" class="btn-copy" data-target="pin">Copy</button>
+          </div>
+          <pre id="out-pin" class="copy-text"></pre>
+        </article>
+      </div>
+    </section>
+
+    <section class="panel studio-footer-cta">
+      <h2 class="section-title">Grow with NEXX</h2>
+      <p>Every post drives to <a href="https://www.tiktok.com/@JoshNexx9" target="_blank" rel="noopener">@JoshNexx9</a> — cyberpunk tarot, cipher pulls, real readings. <a href="grow.html">Open Growth Lab</a> for your 7-day calendar + double-subs playbook.</p>
+    </section>
+
+    <footer>
+      NEXX Studio © nexx · <a href="https://www.tiktok.com/@JoshNexx9" target="_blank" rel="noopener">@JoshNexx9</a> · share the signal
+    </footer>
+  </div>
+  <script src="js/nexx-auth.js"></script>
+  <script src="js/auth-gate.js"></script>
+  <script src="js/copy.js"></script>
+  <script src="js/paywall.js"></script>
+  <script src="js/upsell.js"></script>
+  <script src="js/studio.js"></script>
+</body>
+</html>

@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="NEXX Oracle — sigil, mantra, and rune casting." />
+  <meta name="theme-color" content="#05050f" />
+  <title>NEXX Oracle · Sigil · Mantra · Runes</title>
+  <link rel="stylesheet" href="css/nexx-tarot.css" />
+  <link rel="icon" href="assets/logo.jpg" />
+</head>
+<body class="scanlines oracle-mode">
+  <div class="app">
+    <header>
+      <img class="logo" src="assets/logo.jpg" alt="NEXX Oracle" />
+      <div class="brand">
+        <h1 class="glitch">NEXX Oracle</h1>
+        <p>Sigil · Mantra · Rune Engine</p>
+      </div>
+      <nav class="nav-links">
+        <a href="index.html" class="center-nav">Home</a>
+        <a href="tarot.html">Tarot</a>
+        <a href="pull.html">Cipher</a>
+        <a href="oracle.html" class="active">Oracle</a>
+        <a href="pendulum.html">Pendulum</a>
+        <a href="wheel.html">Wheel</a>
+        <a href="premium.html" class="premium-nav">Premium</a>
+      </nav>
+      <div class="status-bar">
+        <span>Cast mode</span>
+        <strong id="oracle-status">ready</strong>
+      </div>
+    </header>
+
+    <section class="question-panel panel">
+      <h2 class="section-title">Your intention</h2>
+      <div class="question-grid">
+        <div class="field">
+          <label for="question-type">Focus</label>
+          <select id="question-type"></select>
+          <p class="field-hint" id="question-type-hint">Optional frame for your cast.</p>
+        </div>
+        <div class="field field-grow">
+          <label for="question-text">What do you need?</label>
+          <textarea id="question-text" rows="2" maxlength="280"
+            placeholder="e.g. Cut the anxiety loop. Find my next move."></textarea>
+        </div>
+      </div>
+    </section>
+
+    <nav class="oracle-tabs" role="tablist">
+      <button type="button" class="oracle-tab active" data-tab="sigil" role="tab">◇ Sigil Pull</button>
+      <button type="button" class="oracle-tab" data-tab="mantra" role="tab">◎ Mantra Pull</button>
+      <button type="button" class="oracle-tab" data-tab="runes" role="tab">ᛞ Rune Throw</button>
+    </nav>
+
+    <!-- SIGIL -->
+    <section class="oracle-panel panel active" id="panel-sigil" role="tabpanel">
+      <div class="oracle-grid">
+        <div class="oracle-stage">
+          <canvas id="sigil-canvas" width="360" height="360" aria-label="Generated sigil"></canvas>
+          <p class="stage-hint">Procedural cyber-sigil · unique each pull</p>
+        </div>
+        <div class="oracle-readout" id="sigil-readout">
+          <p class="meta">awaiting cast…</p>
+          <h2>Pull a sigil</h2>
+          <p class="keyword">Intent locks to your question. Trace or save the glyph.</p>
+          <div class="nexx-move">
+            <h3>▶ NEXX Move</h3>
+            <p>Press Cast Sigil to generate.</p>
+          </div>
+          <div class="actions">
+            <button type="button" class="primary" id="btn-sigil">Cast Sigil</button>
+            <button type="button" id="btn-sigil-save">Save Sigil</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- MANTRA -->
+    <section class="oracle-panel panel" id="panel-mantra" role="tabpanel" hidden>
+      <div class="oracle-grid">
+        <div class="oracle-stage mantra-stage">
+          <div class="mantra-ring" id="mantra-ring" aria-hidden="true"></div>
+          <blockquote class="mantra-display" id="mantra-display">—</blockquote>
+          <p class="breath-guide" id="breath-guide">breath pattern · —</p>
+        </div>
+        <div class="oracle-readout" id="mantra-readout">
+          <p class="meta">mantra channel</p>
+          <h2 id="mantra-tone">Pull a mantra</h2>
+          <p class="keyword" id="mantra-note">Spoken rhythm to break the loop.</p>
+          <div class="nexx-move">
+            <h3>▶ NEXX Move</h3>
+            <p id="mantra-move">Press Pull Mantra.</p>
+          </div>
+          <div class="actions">
+            <button type="button" class="primary" id="btn-mantra">Pull Mantra</button>
+            <button type="button" id="btn-mantra-copy">Copy</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- RUNES -->
+    <section class="oracle-panel panel" id="panel-runes" role="tabpanel" hidden>
+      <div class="rune-controls">
+        <label>Runes to throw</label>
+        <div class="pull-presets">
+          <button type="button" class="preset rune-preset active" data-count="1">1</button>
+          <button type="button" class="preset rune-preset" data-count="3">3</button>
+          <button type="button" class="preset rune-preset" data-count="5">5</button>
+        </div>
+        <p class="pull-hint">Always includes a final <strong>Clarity</strong> rune (+1).</p>
+      </div>
+      <div class="rune-cloth" id="rune-cloth">
+        <p class="cloth-label">casting cloth</p>
+      </div>
+      <div class="oracle-readout" id="rune-readout" hidden>
+        <h2>Cast result</h2>
+        <div class="rune-results" id="rune-results"></div>
+        <div class="answer-synthesis">
+          <h3>▶ Synthesis</h3>
+          <p id="rune-synthesis">—</p>
+        </div>
+        <div class="actions">
+          <button type="button" class="primary" id="btn-runes">Throw Runes</button>
+          <button type="button" id="btn-runes-export">Export Cast</button>
+        </div>
+      </div>
+      <div class="actions rune-actions-top">
+        <button type="button" class="primary" id="btn-runes-top">Throw Runes</button>
+      </div>
+    </section>
+
+    <footer>
+      NEXX Oracle © nexx · Elder Futhark · <a href="index.html">Tarot</a>
+    </footer>
+  </div>
+  <script src="js/nexx-auth.js"></script>
+  <script src="js/auth-gate.js"></script>
+  <script src="js/copy.js"></script>
+  <script src="js/nexx-certainty.js"></script>
+  <script src="js/readings.js"></script>
+  <script src="js/paywall.js"></script>
+  <script src="js/upsell.js"></script>
+  <script src="js/oracle.js"></script>
+</body>
+</html>

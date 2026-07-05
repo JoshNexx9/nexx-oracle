@@ -1,0 +1,20 @@
+[
+  {"id": "s01", "name": "Loop Breaker", "intent": "Close spirals", "glyph": "break", "keyword": "Terminate recursive thought.", "nexx_move": "Draw on paper or screen. Close every spiral tab after."},
+  {"id": "s02", "name": "Killswitch Seal", "intent": "Protect perimeter", "glyph": "shield", "keyword": "No leaks. Guarded channel.", "nexx_move": "Trace the hexagon. Verify your boundaries are active."},
+  {"id": "s03", "name": "Starwell", "intent": "Restore after storm", "glyph": "star", "keyword": "Clear sky protocol.", "nexx_move": "Pour water. Place sigil where you drink."},
+  {"id": "s04", "name": "Raven Gate", "intent": "Release obsession", "glyph": "raven", "keyword": "Let the dark bird pass through.", "nexx_move": "Poe mode: name the fear once, then silence."},
+  {"id": "s05", "name": "Lantern Node", "intent": "Solitude clarity", "glyph": "lantern", "keyword": "Inner light without noise.", "nexx_move": "Ten minutes offline with this sigil visible."},
+  {"id": "s06", "name": "Cipher Key", "intent": "Unlock decision", "glyph": "key", "keyword": "One door opens.", "nexx_move": "Make the choice you've postponed. Burn or save the sigil."},
+  {"id": "s07", "name": "Pulse Bridge", "intent": "Connection", "glyph": "bridge", "keyword": "Signal crosses the gap.", "nexx_move": "Send one honest message after drawing."},
+  {"id": "s08", "name": "Cache Vault", "intent": "Preserve energy", "glyph": "vault", "keyword": "Store strength, spend wisely.", "nexx_move": "Rest before spend. No heroic overdraft."},
+  {"id": "s09", "name": "Tower Anchor", "intent": "Survive collapse", "glyph": "anchor", "keyword": "Fall without fragmenting.", "nexx_move": "Let one structure go. Stay intact."},
+  {"id": "s10", "name": "Dawn Port", "intent": "New cycle", "glyph": "dawn", "keyword": "Threshold crossed.", "nexx_move": "Start one thing fresh. No backup plan."},
+  {"id": "s11", "name": "Void Eye", "intent": "See shadow", "glyph": "eye", "keyword": "Witness without merging.", "nexx_move": "Write what you see. Don't become it."},
+  {"id": "s12", "name": "Grid Root", "intent": "Ground nervous system", "glyph": "root", "keyword": "Feet down. Field stable.", "nexx_move": "Stand on bare floor 60 seconds after draw."},
+  {"id": "s13", "name": "Mercury Spiral", "intent": "Swift communication", "glyph": "spiral", "keyword": "Message delivered clean.", "nexx_move": "Send the one sentence you've edited too long."},
+  {"id": "s14", "name": "Othala Mark", "intent": "Claim home", "glyph": "home", "keyword": "You belong here.", "nexx_move": "Occupy your space physically. Shoulders back."},
+  {"id": "s15", "name": "Hex Flame", "intent": "Ignite action", "glyph": "flame", "keyword": "Controlled burn.", "nexx_move": "One ignition event in ten minutes."},
+  {"id": "s16", "name": "Moon Well", "intent": "Dream decode", "glyph": "moon", "keyword": "Fog is data, not verdict.", "nexx_move": "Journal dreams or fears. No conclusions tonight."},
+  {"id": "s17", "name": "Justice Scale", "intent": "Balance ledger", "glyph": "scale", "keyword": "Facts over story.", "nexx_move": "Write events stripped of narrative."},
+  {"id": "s18", "name": "World Gate", "intent": "Complete cycle", "glyph": "gate", "keyword": "Chapter sealed.", "nexx_move": "Ship, close, or celebrate one finish today."}
+]

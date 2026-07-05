@@ -1,0 +1,18 @@
+#!/usr/bin/env bash
+# Launch NEXX Portal — vault + tarot + oracle
+set -euo pipefail
+SOURCE="${BASH_SOURCE[0]}"
+while [[ -L "$SOURCE" ]]; do
+  LINK="$(readlink "$SOURCE")"
+  [[ "$LINK" == /* ]] && SOURCE="$LINK" || SOURCE="$(cd "$(dirname "$SOURCE")" && pwd)/$LINK"
+done
+DIR="$(cd "$(dirname "$SOURCE")" && pwd)"
+PORT="${NEXX_TAROT_PORT:-8765}"
+BIND="${NEXX_BIND:-0.0.0.0}"
+
+if command -v xdg-open &>/dev/null && [[ -z "${NEXX_TAROT_NO_BROWSER:-}" ]]; then
+  (sleep 0.8 && xdg-open "http://127.0.0.1:${PORT}/") &
+fi
+
+cd "$DIR"
+exec python3 vault/server.py --port "$PORT" --bind "$BIND"

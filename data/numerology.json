@@ -1,0 +1,27 @@
+{
+  "digits": {
+    "1": { "keyword": "Origin · will · singularity", "tarot": "Magician", "myth": "Monad — the One before division", "science": "Identity element in any system." },
+    "2": { "keyword": "Polarity · partnership · reflection", "tarot": "High Priestess", "myth": "Dyad — first mirror", "science": "Binary logic: difference creates information." },
+    "3": { "keyword": "Creation · expression · triangle", "tarot": "Empress", "myth": "Triad — mother-father-child", "science": "Minimum stable network (triangle truss)." },
+    "4": { "keyword": "Foundation · square · order", "tarot": "Emperor", "myth": "Four corners · four elements", "science": "Four forces / four seasons — structural rhythm." },
+    "5": { "keyword": "Change · chaos · human", "tarot": "Hierophant", "myth": "Pentagram · five senses", "science": "Phase change threshold in dynamics." },
+    "6": { "keyword": "Harmony · hex · nurture", "tarot": "Lovers", "myth": "Six days of creation · honeycomb", "science": "Homeostatic set-point seeking." },
+    "7": { "keyword": "Mystery · quest · inner", "tarot": "Chariot", "myth": "Seven seals · seven classical planets", "science": "Miller's 7±2 — consciousness bandwidth." },
+    "8": { "keyword": "Power · infinity · karma", "tarot": "Strength", "myth": "Ouroboros sideways — endless loop", "science": "Feedback amplification / wealth loops." },
+    "9": { "keyword": "Completion · wisdom · release", "tarot": "Hermit", "myth": "Nine months · ennead", "science": "System approaching equilibrium before reset." },
+    "11": { "keyword": "Master intuition · gateway", "tarot": "Justice", "myth": "Two pillars as one vision", "science": "High sensitivity — signal amplifier." },
+    "22": { "keyword": "Master builder · manifest", "tarot": "Fool + World", "myth": "Temple blueprints from sky", "science": "Architecture of large-scale projects." },
+    "33": { "keyword": "Master teacher · compassion", "tarot": "Star", "myth": "Christ frequency · healer number", "science": "Altruism as social glue." }
+  },
+  "life_path_meanings": {
+    "1": "You build from zero. Leadership is your native protocol.",
+    "2": "You harmonize fields. Partnership multiplies your signal.",
+    "3": "You transmit joy. Expression is your magic circuit.",
+    "4": "You architect stability. Slow is your superpower.",
+    "5": "You ride change. Freedom is your teacher.",
+    "6": "You heal circles. Service is your covenant.",
+    "7": "You mine depth. Solitude refines your lens.",
+    "8": "You move power. Abundance follows aligned authority.",
+    "9": "You close cycles. Wisdom is your legacy output."
+  }
+}

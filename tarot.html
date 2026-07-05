@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="NEXX Tarot — daily cyberpunk relief protocol. One card. One move." />
+  <meta name="theme-color" content="#05050f" />
+  <title>NEXX Tarot · Daily Relief</title>
+  <link rel="stylesheet" href="css/nexx-tarot.css" />
+  <link rel="icon" href="assets/logo.jpg" />
+</head>
+<body class="scanlines">
+  <div class="app">
+    <header>
+      <img class="logo" src="assets/logo.jpg" alt="NEXX Tarot" />
+      <div class="brand">
+        <h1 class="glitch">NEXX Tarot</h1>
+        <p>Daily Relief Protocol v1.0</p>
+      </div>
+      <nav class="nav-links">
+        <a href="index.html">Vault</a>
+        <a href="index.html" class="center-nav">Home</a>
+        <a href="tarot.html" class="active">Tarot</a>
+        <a href="pull.html">Cipher</a>
+        <a href="oracle.html">Oracle</a>
+        <a href="certainty.html">Certainty</a>
+        <a href="premium.html" class="premium-nav">Premium</a>
+      </nav>
+      <div class="status-bar">
+        <span>Today's signal</span>
+        <strong id="today-label">—</strong>
+      </div>
+    </header>
+
+    <section class="question-panel panel">
+      <h2 class="section-title">Your question</h2>
+      <div class="question-grid">
+        <div class="field">
+          <label for="question-type">Question type</label>
+          <select id="question-type" aria-describedby="question-type-hint"></select>
+          <p class="field-hint" id="question-type-hint">Open reading on any topic.</p>
+        </div>
+        <div class="field field-grow">
+          <label for="question-text">What do you want to know?</label>
+          <textarea id="question-text" rows="2" maxlength="280"
+            placeholder="Optional — today's card answers in this frame"></textarea>
+        </div>
+      </div>
+    </section>
+
+    <main class="grid">
+      <section class="card-stage" aria-live="polite">
+        <div class="tarot-card" id="daily-card" tabindex="0" role="button" aria-label="Reveal daily card">
+          <div class="card-face card-front">
+            <img id="card-art" src="assets/card-back.jpg" alt="Daily card" />
+          </div>
+          <div class="card-face card-back">
+            <img src="assets/card-back.jpg" alt="Card back" />
+          </div>
+        </div>
+      </section>
+
+      <section class="panel reveal-anim" id="reading-panel">
+        <p class="meta" id="card-id">awaiting uplink…</p>
+        <h2 id="card-name">Initializing</h2>
+        <p class="keyword" id="card-keyword">One card per day. Same signal until midnight. Tap the card to flip.</p>
+
+        <div class="answer-synthesis daily-answer" id="daily-answer" hidden>
+          <h3>▶ Answer</h3>
+          <p id="answer-text">—</p>
+          <span class="verdict-badge" id="verdict-badge" hidden></span>
+        </div>
+
+        <div class="clarity-block panel-inset" id="clarity-block" hidden>
+          <h3>◇ Clarity Card</h3>
+          <div class="clarity-row">
+            <img id="clarity-art" src="assets/card-back.jpg" alt="Clarity card" />
+            <div>
+              <p class="meta" id="clarity-id">—</p>
+              <strong id="clarity-name">—</strong>
+              <p id="clarity-answer">—</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="myth-block panel-inset" id="myth-block" hidden>
+          <h3>◇ Myth & Origin</h3>
+          <p class="meta" id="myth-deity">—</p>
+          <p id="myth-legend">—</p>
+          <p class="archive-science" id="myth-science">—</p>
+        </div>
+
+        <div class="nexx-move">
+          <h3>▶ NEXX Move</h3>
+          <p id="nexx-move-text">Your actionable relief directive loads with the draw.</p>
+        </div>
+
+        <div class="actions">
+          <button type="button" class="primary" id="btn-reveal">Reveal Today</button>
+          <button type="button" class="primary-outline" id="btn-pull-again">Pull Again</button>
+          <button type="button" id="btn-share">Share Pull</button>
+          <button type="button" id="btn-journal">Save Reading</button>
+        </div>
+        <p class="field-hint pull-again-hint" id="pull-again-hint">Change your question type anytime. <strong>Pull Again</strong> draws a fresh card — daily lock stays until midnight.</p>
+      </section>
+    </main>
+
+    <section class="history">
+      <h3>Recent pulls</h3>
+      <div class="history-list" id="history-list"></div>
+    </section>
+
+    <footer>
+      NEXX Tarot © nexx · Relief edition · Licensed for personal use · Commercial license available
+    </footer>
+  </div>
+  <script src="js/nexx-auth.js"></script>
+  <script src="js/auth-gate.js"></script>
+  <script src="js/copy.js"></script>
+  <script src="js/nexx-certainty.js"></script>
+  <script src="js/readings.js"></script>
+  <script src="js/paywall.js"></script>
+  <script src="js/upsell.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>

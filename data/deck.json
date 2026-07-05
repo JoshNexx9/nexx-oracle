@@ -1,0 +1,782 @@
+[
+  {
+    "id": "00",
+    "name": "The Fool",
+    "suit": "major",
+    "arcana": "major",
+    "keyword": "New signal. Leap before the loop restarts.",
+    "meaning": "New signal. Leap before the loop restarts.",
+    "nexx_move": "Boot a fresh session. One brave click. No backup plan needed.",
+    "art": "assets/major/00-the-fool.png"
+  },
+  {
+    "id": "01",
+    "name": "The Magician",
+    "suit": "major",
+    "arcana": "major",
+    "keyword": "You already have the stack.",
+    "meaning": "You already have the stack.",
+    "nexx_move": "List four tools within arm's reach. Use one in the next hour.",
+    "art": "assets/major/01-the-magician.png"
+  },
+  {
+    "id": "02",
+    "name": "The High Priestess",
+    "suit": "major",
+    "arcana": "major",
+    "keyword": "Listen beneath the noise floor.",
+    "meaning": "Listen beneath the noise floor.",
+    "nexx_move": "Twenty minutes offline. Write what you know without proof.",
+    "art": "assets/major/02-the-high-priestess.png"
+  },
+  {
+    "id": "03",
+    "name": "The Empress",
+    "suit": "major",
+    "arcana": "major",
+    "keyword": "Grow what's still alive.",
+    "meaning": "Grow what's still alive.",
+    "nexx_move": "Feed something — plant, pet, project, or your own body.",
+    "art": "assets/major/03-the-empress.png"
+  },
+  {
+    "id": "04",
+    "name": "The Emperor",
+    "suit": "major",
+    "arcana": "major",
+    "keyword": "Build the boundary wall.",
+    "meaning": "Build the boundary wall.",
+    "nexx_move": "Say one clear no. Mean it. No apology subroutine.",
+    "art": "assets/major/04-the-emperor.png"
+  },
+  {
+    "id": "05",
+    "name": "The Hierophant",
+    "suit": "major",
+    "arcana": "major",
+    "keyword": "Borrow a map.",
+    "meaning": "Borrow a map.",
+    "nexx_move": "Ask someone who's crossed this bridge. Take notes.",
+    "art": "assets/major/05-the-hierophant.png"
+  },
+  {
+    "id": "06",
+    "name": "The Lovers",
+    "suit": "major",
+    "arcana": "major",
+    "keyword": "Align head and heart ports.",
+    "meaning": "Align head and heart ports.",
+    "nexx_move": "One decision: pick the path that feels quiet, not loud.",
+    "art": "assets/major/06-the-lovers.png"
+  },
+  {
+    "id": "07",
+    "name": "The Chariot",
+    "suit": "major",
+    "arcana": "major",
+    "keyword": "Drive — don't drift.",
+    "meaning": "Drive — don't drift.",
+    "nexx_move": "Pick one target today. Finish it before entertainment.",
+    "art": "assets/major/07-the-chariot.png"
+  },
+  {
+    "id": "08",
+    "name": "Strength",
+    "suit": "major",
+    "arcana": "major",
+    "keyword": "Soft hands on a wild process.",
+    "meaning": "Soft hands on a wild process.",
+    "nexx_move": "Breathe four counts in, six out. Repeat until the spike drops.",
+    "art": "assets/major/08-strength.png"
+  },
+  {
+    "id": "09",
+    "name": "The Hermit",
+    "suit": "major",
+    "arcana": "major",
+    "keyword": "Lantern mode.",
+    "meaning": "Lantern mode.",
+    "nexx_move": "Solitude before answers. Walk without headphones.",
+    "art": "assets/major/09-the-hermit.jpg"
+  },
+  {
+    "id": "10",
+    "name": "Wheel of Fortune",
+    "suit": "major",
+    "arcana": "major",
+    "keyword": "The cycle turned without you.",
+    "meaning": "The cycle turned without you.",
+    "nexx_move": "Stop forcing. Notice what shifted on its own.",
+    "art": "assets/major/10-wheel-of-fortune.png"
+  },
+  {
+    "id": "11",
+    "name": "Justice",
+    "suit": "major",
+    "arcana": "major",
+    "keyword": "Balance the ledger.",
+    "meaning": "Balance the ledger.",
+    "nexx_move": "Write what happened. Strip story. Keep facts.",
+    "art": "assets/major/11-justice.png"
+  },
+  {
+    "id": "12",
+    "name": "The Hanged Man",
+    "suit": "major",
+    "arcana": "major",
+    "keyword": "Suspend action. Gain angle.",
+    "meaning": "Suspend action. Gain angle.",
+    "nexx_move": "Deliberately do nothing about the problem for 24 hours.",
+    "art": "assets/major/12-the-hanged-man.png"
+  },
+  {
+    "id": "13",
+    "name": "Death",
+    "suit": "major",
+    "arcana": "major",
+    "keyword": "Kill the old process.",
+    "meaning": "Kill the old process.",
+    "nexx_move": "Delete, archive, or close one chapter today.",
+    "art": "assets/major/13-death.png"
+  },
+  {
+    "id": "14",
+    "name": "Temperance",
+    "suit": "major",
+    "arcana": "major",
+    "keyword": "Mix slowly.",
+    "meaning": "Mix slowly.",
+    "nexx_move": "Blend work and rest — not all throttle, not all idle.",
+    "art": "assets/major/14-temperance.png"
+  },
+  {
+    "id": "15",
+    "name": "The Devil",
+    "suit": "major",
+    "arcana": "major",
+    "keyword": "Name the chain.",
+    "meaning": "Name the chain.",
+    "nexx_move": "Identify what you're still feeding. Starve it one day.",
+    "art": "assets/major/15-the-devil.png"
+  },
+  {
+    "id": "16",
+    "name": "The Tower",
+    "suit": "major",
+    "arcana": "major",
+    "keyword": "Let the bad architecture fall.",
+    "meaning": "Let the bad architecture fall.",
+    "nexx_move": "Don't rebuild the same bug. Patch different.",
+    "art": "assets/major/16-the-tower.png"
+  },
+  {
+    "id": "17",
+    "name": "The Star",
+    "suit": "major",
+    "arcana": "major",
+    "keyword": "Clear sky protocol.",
+    "meaning": "Clear sky protocol.",
+    "nexx_move": "Close every spiral tab. Pour water. Name three things already fixed.",
+    "art": "assets/major/17-star.jpg"
+  },
+  {
+    "id": "18",
+    "name": "The Moon",
+    "suit": "major",
+    "arcana": "major",
+    "keyword": "Fog is not enemy territory.",
+    "meaning": "Fog is not enemy territory.",
+    "nexx_move": "Don't trust 3am conclusions. Wait for daylight data.",
+    "art": "assets/major/18-the-moon.jpg"
+  },
+  {
+    "id": "19",
+    "name": "The Sun",
+    "suit": "major",
+    "arcana": "major",
+    "keyword": "Full visibility granted.",
+    "meaning": "Full visibility granted.",
+    "nexx_move": "Share one win out loud. Let warmth be evidence.",
+    "art": "assets/major/19-the-sun.png"
+  },
+  {
+    "id": "20",
+    "name": "Judgement",
+    "suit": "major",
+    "arcana": "major",
+    "keyword": "Answer the call.",
+    "meaning": "Answer the call.",
+    "nexx_move": "Respond to the thing you've been putting off. Rise.",
+    "art": "assets/major/20-judgement.png"
+  },
+  {
+    "id": "21",
+    "name": "The World",
+    "suit": "major",
+    "arcana": "major",
+    "keyword": "Cycle complete.",
+    "meaning": "Cycle complete.",
+    "nexx_move": "Celebrate closure. Ship it. Rest inside the finish.",
+    "art": "assets/major/21-the-world.png"
+  },
+  {
+    "id": "Wace",
+    "name": "Ace of Wands",
+    "suit": "wands",
+    "arcana": "minor",
+    "keyword": "Seed packet received.",
+    "meaning": "Seed packet received. (fire / will / spark)",
+    "nexx_move": "Start small. One ignition event today.",
+    "art": "assets/minor/wands-ace.png"
+  },
+  {
+    "id": "W02",
+    "name": "Two of Wands",
+    "suit": "wands",
+    "arcana": "minor",
+    "keyword": "Dual channel open.",
+    "meaning": "Dual channel open. (fire / will / spark)",
+    "nexx_move": "Pair up — delegate or co-pilot one task.",
+    "art": "assets/minor/wands-02.png"
+  },
+  {
+    "id": "W03",
+    "name": "Three of Wands",
+    "suit": "wands",
+    "arcana": "minor",
+    "keyword": "Network broadcast.",
+    "meaning": "Network broadcast. (fire / will / spark)",
+    "nexx_move": "Ship a draft. Let three eyes see it.",
+    "art": "assets/minor/wands-03.png"
+  },
+  {
+    "id": "W04",
+    "name": "Four of Wands",
+    "suit": "wands",
+    "arcana": "minor",
+    "keyword": "Stable frame.",
+    "meaning": "Stable frame. (fire / will / spark)",
+    "nexx_move": "Fortify home base — desk, room, or routine.",
+    "art": "assets/minor/wands-04.png"
+  },
+  {
+    "id": "W05",
+    "name": "Five of Wands",
+    "suit": "wands",
+    "arcana": "minor",
+    "keyword": "Static on the line.",
+    "meaning": "Static on the line. (fire / will / spark)",
+    "nexx_move": "Expect friction. Don't take noise as verdict.",
+    "art": "assets/minor/wands-05.png"
+  },
+  {
+    "id": "W06",
+    "name": "Six of Wands",
+    "suit": "wands",
+    "arcana": "minor",
+    "keyword": "Uplink restored.",
+    "meaning": "Uplink restored. (fire / will / spark)",
+    "nexx_move": "Reach toward calmer bandwidth. Move laterally.",
+    "art": "assets/minor/wands-06.png"
+  },
+  {
+    "id": "W07",
+    "name": "Seven of Wands",
+    "suit": "wands",
+    "arcana": "minor",
+    "keyword": "Hold the port.",
+    "meaning": "Hold the port. (fire / will / spark)",
+    "nexx_move": "Defend one boundary. You're almost through.",
+    "art": "assets/minor/wands-07.png"
+  },
+  {
+    "id": "W08",
+    "name": "Eight of Wands",
+    "suit": "wands",
+    "arcana": "minor",
+    "keyword": "Packets flying.",
+    "meaning": "Packets flying. (fire / will / spark)",
+    "nexx_move": "Act fast on clean signal. Momentum is now.",
+    "art": "assets/minor/wands-08.png"
+  },
+  {
+    "id": "W09",
+    "name": "Nine of Wands",
+    "suit": "wands",
+    "arcana": "minor",
+    "keyword": "Last firewall.",
+    "meaning": "Last firewall. (fire / will / spark)",
+    "nexx_move": "You're tired because you stayed. One more watch.",
+    "art": "assets/minor/wands-09.png"
+  },
+  {
+    "id": "W10",
+    "name": "Ten of Wands",
+    "suit": "wands",
+    "arcana": "minor",
+    "keyword": "Load limit hit.",
+    "meaning": "Load limit hit. (fire / will / spark)",
+    "nexx_move": "Drop a burden. You can't carry ten fires.",
+    "art": "assets/minor/wands-10.png"
+  },
+  {
+    "id": "Wpage",
+    "name": "Page of Wands",
+    "suit": "wands",
+    "arcana": "minor",
+    "keyword": "Scout process.",
+    "meaning": "Scout process. (fire / will / spark)",
+    "nexx_move": "Learn one new thing. Stay curious, not certain.",
+    "art": "assets/minor/wands-page.png"
+  },
+  {
+    "id": "Wknight",
+    "name": "Knight of Wands",
+    "suit": "wands",
+    "arcana": "minor",
+    "keyword": "Charge routine.",
+    "meaning": "Charge routine. (fire / will / spark)",
+    "nexx_move": "Move with focus. One direction only.",
+    "art": "assets/minor/wands-knight.png"
+  },
+  {
+    "id": "Wqueen",
+    "name": "Queen of Wands",
+    "suit": "wands",
+    "arcana": "minor",
+    "keyword": "Deep receive.",
+    "meaning": "Deep receive. (fire / will / spark)",
+    "nexx_move": "Nurture the signal — rest, hydrate, listen.",
+    "art": "assets/minor/wands-queen.png"
+  },
+  {
+    "id": "Wking",
+    "name": "King of Wands",
+    "suit": "wands",
+    "arcana": "minor",
+    "keyword": "Master node.",
+    "meaning": "Master node. (fire / will / spark)",
+    "nexx_move": "Lead with calm authority. Decide and deploy.",
+    "art": "assets/minor/wands-king.png"
+  },
+  {
+    "id": "Cace",
+    "name": "Ace of Cups",
+    "suit": "cups",
+    "arcana": "minor",
+    "keyword": "Seed packet received.",
+    "meaning": "Seed packet received. (water / feeling / flow)",
+    "nexx_move": "Start small. One ignition event today.",
+    "art": "assets/minor/cups-ace.png"
+  },
+  {
+    "id": "C02",
+    "name": "Two of Cups",
+    "suit": "cups",
+    "arcana": "minor",
+    "keyword": "Dual channel open.",
+    "meaning": "Dual channel open. (water / feeling / flow)",
+    "nexx_move": "Pair up — delegate or co-pilot one task.",
+    "art": "assets/minor/cups-02.png"
+  },
+  {
+    "id": "C03",
+    "name": "Three of Cups",
+    "suit": "cups",
+    "arcana": "minor",
+    "keyword": "Network broadcast.",
+    "meaning": "Network broadcast. (water / feeling / flow)",
+    "nexx_move": "Ship a draft. Let three eyes see it.",
+    "art": "assets/minor/cups-03.png"
+  },
+  {
+    "id": "C04",
+    "name": "Four of Cups",
+    "suit": "cups",
+    "arcana": "minor",
+    "keyword": "Stable frame.",
+    "meaning": "Stable frame. (water / feeling / flow)",
+    "nexx_move": "Fortify home base — desk, room, or routine.",
+    "art": "assets/minor/cups-04.png"
+  },
+  {
+    "id": "C05",
+    "name": "Five of Cups",
+    "suit": "cups",
+    "arcana": "minor",
+    "keyword": "Static on the line.",
+    "meaning": "Static on the line. (water / feeling / flow)",
+    "nexx_move": "Expect friction. Don't take noise as verdict.",
+    "art": "assets/minor/cups-05.png"
+  },
+  {
+    "id": "C06",
+    "name": "Six of Cups",
+    "suit": "cups",
+    "arcana": "minor",
+    "keyword": "Uplink restored.",
+    "meaning": "Uplink restored. (water / feeling / flow)",
+    "nexx_move": "Reach toward calmer bandwidth. Move laterally.",
+    "art": "assets/minor/cups-06.png"
+  },
+  {
+    "id": "C07",
+    "name": "Seven of Cups",
+    "suit": "cups",
+    "arcana": "minor",
+    "keyword": "Hold the port.",
+    "meaning": "Hold the port. (water / feeling / flow)",
+    "nexx_move": "Defend one boundary. You're almost through.",
+    "art": "assets/minor/cups-07.png"
+  },
+  {
+    "id": "C08",
+    "name": "Eight of Cups",
+    "suit": "cups",
+    "arcana": "minor",
+    "keyword": "Packets flying.",
+    "meaning": "Packets flying. (water / feeling / flow)",
+    "nexx_move": "Act fast on clean signal. Momentum is now.",
+    "art": "assets/minor/cups-08.png"
+  },
+  {
+    "id": "C09",
+    "name": "Nine of Cups",
+    "suit": "cups",
+    "arcana": "minor",
+    "keyword": "Last firewall.",
+    "meaning": "Last firewall. (water / feeling / flow)",
+    "nexx_move": "You're tired because you stayed. One more watch.",
+    "art": "assets/minor/cups-09.png"
+  },
+  {
+    "id": "C10",
+    "name": "Ten of Cups",
+    "suit": "cups",
+    "arcana": "minor",
+    "keyword": "Load limit hit.",
+    "meaning": "Load limit hit. (water / feeling / flow)",
+    "nexx_move": "Drop a burden. You can't carry ten fires.",
+    "art": "assets/minor/cups-10.png"
+  },
+  {
+    "id": "Cpage",
+    "name": "Page of Cups",
+    "suit": "cups",
+    "arcana": "minor",
+    "keyword": "Scout process.",
+    "meaning": "Scout process. (water / feeling / flow)",
+    "nexx_move": "Learn one new thing. Stay curious, not certain.",
+    "art": "assets/minor/cups-page.png"
+  },
+  {
+    "id": "Cknight",
+    "name": "Knight of Cups",
+    "suit": "cups",
+    "arcana": "minor",
+    "keyword": "Charge routine.",
+    "meaning": "Charge routine. (water / feeling / flow)",
+    "nexx_move": "Move with focus. One direction only.",
+    "art": "assets/minor/cups-knight.png"
+  },
+  {
+    "id": "Cqueen",
+    "name": "Queen of Cups",
+    "suit": "cups",
+    "arcana": "minor",
+    "keyword": "Deep receive.",
+    "meaning": "Deep receive. (water / feeling / flow)",
+    "nexx_move": "Nurture the signal — rest, hydrate, listen.",
+    "art": "assets/minor/cups-queen.png"
+  },
+  {
+    "id": "Cking",
+    "name": "King of Cups",
+    "suit": "cups",
+    "arcana": "minor",
+    "keyword": "Master node.",
+    "meaning": "Master node. (water / feeling / flow)",
+    "nexx_move": "Lead with calm authority. Decide and deploy.",
+    "art": "assets/minor/cups-king.png"
+  },
+  {
+    "id": "Sace",
+    "name": "Ace of Swords",
+    "suit": "swords",
+    "arcana": "minor",
+    "keyword": "Seed packet received.",
+    "meaning": "Seed packet received. (air / mind / cut)",
+    "nexx_move": "Start small. One ignition event today.",
+    "art": "assets/minor/swords-ace.png"
+  },
+  {
+    "id": "S02",
+    "name": "Two of Swords",
+    "suit": "swords",
+    "arcana": "minor",
+    "keyword": "Dual channel open.",
+    "meaning": "Dual channel open. (air / mind / cut)",
+    "nexx_move": "Pair up — delegate or co-pilot one task.",
+    "art": "assets/minor/swords-02.png"
+  },
+  {
+    "id": "S03",
+    "name": "Three of Swords",
+    "suit": "swords",
+    "arcana": "minor",
+    "keyword": "Network broadcast.",
+    "meaning": "Network broadcast. (air / mind / cut)",
+    "nexx_move": "Ship a draft. Let three eyes see it.",
+    "art": "assets/minor/swords-03.png"
+  },
+  {
+    "id": "S04",
+    "name": "Four of Swords",
+    "suit": "swords",
+    "arcana": "minor",
+    "keyword": "Stable frame.",
+    "meaning": "Stable frame. (air / mind / cut)",
+    "nexx_move": "Fortify home base — desk, room, or routine.",
+    "art": "assets/minor/swords-04.png"
+  },
+  {
+    "id": "S05",
+    "name": "Five of Swords",
+    "suit": "swords",
+    "arcana": "minor",
+    "keyword": "Static on the line.",
+    "meaning": "Static on the line. (air / mind / cut)",
+    "nexx_move": "Expect friction. Don't take noise as verdict.",
+    "art": "assets/minor/swords-05.png"
+  },
+  {
+    "id": "S06",
+    "name": "Six of Swords",
+    "suit": "swords",
+    "arcana": "minor",
+    "keyword": "Uplink restored.",
+    "meaning": "Uplink restored. (air / mind / cut)",
+    "nexx_move": "Reach toward calmer bandwidth. Move laterally.",
+    "art": "assets/minor/swords-06.png"
+  },
+  {
+    "id": "S07",
+    "name": "Seven of Swords",
+    "suit": "swords",
+    "arcana": "minor",
+    "keyword": "Hold the port.",
+    "meaning": "Hold the port. (air / mind / cut)",
+    "nexx_move": "Defend one boundary. You're almost through.",
+    "art": "assets/minor/swords-07.png"
+  },
+  {
+    "id": "S08",
+    "name": "Eight of Swords",
+    "suit": "swords",
+    "arcana": "minor",
+    "keyword": "Packets flying.",
+    "meaning": "Packets flying. (air / mind / cut)",
+    "nexx_move": "Act fast on clean signal. Momentum is now.",
+    "art": "assets/minor/swords-08.png"
+  },
+  {
+    "id": "S09",
+    "name": "Nine of Swords",
+    "suit": "swords",
+    "arcana": "minor",
+    "keyword": "Last firewall.",
+    "meaning": "Last firewall. (air / mind / cut)",
+    "nexx_move": "You're tired because you stayed. One more watch.",
+    "art": "assets/minor/swords-09.png"
+  },
+  {
+    "id": "S10",
+    "name": "Ten of Swords",
+    "suit": "swords",
+    "arcana": "minor",
+    "keyword": "Load limit hit.",
+    "meaning": "Load limit hit. (air / mind / cut)",
+    "nexx_move": "Drop a burden. You can't carry ten fires.",
+    "art": "assets/minor/swords-10.png"
+  },
+  {
+    "id": "Spage",
+    "name": "Page of Swords",
+    "suit": "swords",
+    "arcana": "minor",
+    "keyword": "Scout process.",
+    "meaning": "Scout process. (air / mind / cut)",
+    "nexx_move": "Learn one new thing. Stay curious, not certain.",
+    "art": "assets/minor/swords-page.png"
+  },
+  {
+    "id": "Sknight",
+    "name": "Knight of Swords",
+    "suit": "swords",
+    "arcana": "minor",
+    "keyword": "Charge routine.",
+    "meaning": "Charge routine. (air / mind / cut)",
+    "nexx_move": "Move with focus. One direction only.",
+    "art": "assets/minor/swords-knight.png"
+  },
+  {
+    "id": "Squeen",
+    "name": "Queen of Swords",
+    "suit": "swords",
+    "arcana": "minor",
+    "keyword": "Deep receive.",
+    "meaning": "Deep receive. (air / mind / cut)",
+    "nexx_move": "Nurture the signal — rest, hydrate, listen.",
+    "art": "assets/minor/swords-queen.png"
+  },
+  {
+    "id": "Sking",
+    "name": "King of Swords",
+    "suit": "swords",
+    "arcana": "minor",
+    "keyword": "Master node.",
+    "meaning": "Master node. (air / mind / cut)",
+    "nexx_move": "Lead with calm authority. Decide and deploy.",
+    "art": "assets/minor/swords-king.png"
+  },
+  {
+    "id": "Pace",
+    "name": "Ace of Pentacles",
+    "suit": "pentacles",
+    "arcana": "minor",
+    "keyword": "Seed packet received.",
+    "meaning": "Seed packet received. (earth / body / coin)",
+    "nexx_move": "Start small. One ignition event today.",
+    "art": "assets/minor/pentacles-ace.png"
+  },
+  {
+    "id": "P02",
+    "name": "Two of Pentacles",
+    "suit": "pentacles",
+    "arcana": "minor",
+    "keyword": "Dual channel open.",
+    "meaning": "Dual channel open. (earth / body / coin)",
+    "nexx_move": "Pair up — delegate or co-pilot one task.",
+    "art": "assets/minor/pentacles-02.png"
+  },
+  {
+    "id": "P03",
+    "name": "Three of Pentacles",
+    "suit": "pentacles",
+    "arcana": "minor",
+    "keyword": "Network broadcast.",
+    "meaning": "Network broadcast. (earth / body / coin)",
+    "nexx_move": "Ship a draft. Let three eyes see it.",
+    "art": "assets/minor/pentacles-03.png"
+  },
+  {
+    "id": "P04",
+    "name": "Four of Pentacles",
+    "suit": "pentacles",
+    "arcana": "minor",
+    "keyword": "Stable frame.",
+    "meaning": "Stable frame. (earth / body / coin)",
+    "nexx_move": "Fortify home base — desk, room, or routine.",
+    "art": "assets/minor/pentacles-04.png"
+  },
+  {
+    "id": "P05",
+    "name": "Five of Pentacles",
+    "suit": "pentacles",
+    "arcana": "minor",
+    "keyword": "Static on the line.",
+    "meaning": "Static on the line. (earth / body / coin)",
+    "nexx_move": "Expect friction. Don't take noise as verdict.",
+    "art": "assets/minor/pentacles-05.png"
+  },
+  {
+    "id": "P06",
+    "name": "Six of Pentacles",
+    "suit": "pentacles",
+    "arcana": "minor",
+    "keyword": "Uplink restored.",
+    "meaning": "Uplink restored. (earth / body / coin)",
+    "nexx_move": "Reach toward calmer bandwidth. Move laterally.",
+    "art": "assets/minor/pentacles-06.png"
+  },
+  {
+    "id": "P07",
+    "name": "Seven of Pentacles",
+    "suit": "pentacles",
+    "arcana": "minor",
+    "keyword": "Hold the port.",
+    "meaning": "Hold the port. (earth / body / coin)",
+    "nexx_move": "Defend one boundary. You're almost through.",
+    "art": "assets/minor/pentacles-07.png"
+  },
+  {
+    "id": "P08",
+    "name": "Eight of Pentacles",
+    "suit": "pentacles",
+    "arcana": "minor",
+    "keyword": "Packets flying.",
+    "meaning": "Packets flying. (earth / body / coin)",
+    "nexx_move": "Act fast on clean signal. Momentum is now.",
+    "art": "assets/minor/pentacles-08.png"
+  },
+  {
+    "id": "P09",
+    "name": "Nine of Pentacles",
+    "suit": "pentacles",
+    "arcana": "minor",
+    "keyword": "Last firewall.",
+    "meaning": "Last firewall. (earth / body / coin)",
+    "nexx_move": "You're tired because you stayed. One more watch.",
+    "art": "assets/minor/pentacles-09.png"
+  },
+  {
+    "id": "P10",
+    "name": "Ten of Pentacles",
+    "suit": "pentacles",
+    "arcana": "minor",
+    "keyword": "Load limit hit.",
+    "meaning": "Load limit hit. (earth / body / coin)",
+    "nexx_move": "Drop a burden. You can't carry ten fires.",
+    "art": "assets/minor/pentacles-10.png"
+  },
+  {
+    "id": "Ppage",
+    "name": "Page of Pentacles",
+    "suit": "pentacles",
+    "arcana": "minor",
+    "keyword": "Scout process.",
+    "meaning": "Scout process. (earth / body / coin)",
+    "nexx_move": "Learn one new thing. Stay curious, not certain.",
+    "art": "assets/minor/pentacles-page.png"
+  },
+  {
+    "id": "Pknight",
+    "name": "Knight of Pentacles",
+    "suit": "pentacles",
+    "arcana": "minor",
+    "keyword": "Charge routine.",
+    "meaning": "Charge routine. (earth / body / coin)",
+    "nexx_move": "Move with focus. One direction only.",
+    "art": "assets/minor/pentacles-knight.png"
+  },
+  {
+    "id": "Pqueen",
+    "name": "Queen of Pentacles",
+    "suit": "pentacles",
+    "arcana": "minor",
+    "keyword": "Deep receive.",
+    "meaning": "Deep receive. (earth / body / coin)",
+    "nexx_move": "Nurture the signal — rest, hydrate, listen.",
+    "art": "assets/minor/pentacles-queen.png"
+  },
+  {
+    "id": "Pking",
+    "name": "King of Pentacles",
+    "suit": "pentacles",
+    "arcana": "minor",
+    "keyword": "Master node.",
+    "meaning": "Master node. (earth / body / coin)",
+    "nexx_move": "Lead with calm authority. Decide and deploy.",
+    "art": "assets/minor/pentacles-king.png"
+  }
+]
