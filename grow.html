@@ -81,18 +81,47 @@
     </section>
 
     <section class="grow-section">
-      <h2 class="section-title">7-day posting calendar</h2>
-      <div id="calendar-grid" class="grow-calendar"></div>
+      <div class="grow-section-head">
+        <h2 class="section-title">7-day content calendar</h2>
+        <button type="button" id="btn-regen-calendar">Shuffle cards</button>
+      </div>
+      <div id="content-calendar" class="grow-calendar"></div>
     </section>
 
     <section class="grow-section">
-      <h2 class="section-title">Bio templates</h2>
-      <div id="bio-templates" class="grow-bios"></div>
+      <h2 class="section-title">Bio variants <span class="block-tag">copy one to TikTok</span></h2>
+      <div id="bio-variants" class="grow-bios"></div>
     </section>
 
-    <section class="grow-section">
-      <h2 class="section-title">Hook bank</h2>
-      <div id="hook-bank" class="grow-hooks"></div>
+    <section class="panel grow-hooks-panel">
+      <div class="copy-block-head">
+        <h2 class="section-title">Hook pack · today</h2>
+        <button type="button" id="btn-copy-hooks">Copy all hooks</button>
+      </div>
+      <div id="hook-pack" class="grow-hooks"></div>
+    </section>
+
+    <section class="panel grow-links">
+      <div class="copy-block-head">
+        <h2 class="section-title">Link-in-bio pack</h2>
+        <button type="button" id="btn-copy-links">Copy links</button>
+      </div>
+      <pre id="link-pack-text" class="copy-text"></pre>
+    </section>
+
+    <section class="panel grow-funnel-panel">
+      <h2 class="section-title">Conversion funnel</h2>
+      <div id="funnel-stats" class="grow-funnel"></div>
+      <p class="grow-funnel-note">Free pull → follow → DM CONSULT → $50 premium. One premium client/week = sustainable growth fuel.</p>
+    </section>
+
+    <section class="panel grow-check-panel">
+      <div class="grow-check-head">
+        <h2 class="section-title">Daily posting checklist</h2>
+        <span id="check-progress" class="grow-check-progress">0 / 8</span>
+      </div>
+      <div class="grow-progress grow-check-bar-wrap"><span id="check-bar"></span></div>
+      <div id="grow-checklist" class="grow-checklist"></div>
     </section>
 
     <footer>
