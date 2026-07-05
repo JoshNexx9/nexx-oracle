@@ -6,6 +6,7 @@ on:
     paths:
       - '.github/workflows/restore-css.yml'
       - 'data/css-chunks/**'
+      - 'scripts/reassemble-css.py'
 
 permissions:
   contents: write
@@ -16,18 +17,8 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      - name: Reassemble and write css/nexx-tarot.css
-        run: |
-          python3 - <<'PYEOF'
-import base64, pathlib, glob
-parts = []
-for p in sorted(glob.glob('data/css-chunks/chunk-*.b64')):
-    parts.append(pathlib.Path(p).read_text())
-css = base64.b64decode(''.join(parts))
-pathlib.Path('css').mkdir(exist_ok=True)
-pathlib.Path('css/nexx-tarot.css').write_bytes(css)
-print(f'Wrote {len(css)} bytes to css/nexx-tarot.css')
-PYEOF
+      - name: Reassemble css/nexx-tarot.css
+        run: python3 scripts/reassemble-css.py
 
       - name: Commit CSS if changed
         run: |
